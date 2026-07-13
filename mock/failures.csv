@@ -1,0 +1,9 @@
+case_id,category,difficulty,overall_score,error,answer
+refusal_missing_price_target_041,refusal,easy,0.825,,I do not have enough cited context to answer that.
+refusal_missing_private_customer_042,refusal,medium,0.825,,I do not have enough cited context to answer that.
+refusal_missing_unreleased_quarter_043,refusal,easy,0.825,,I do not have enough cited context to answer that.
+refusal_missing_board_minutes_044,refusal,medium,0.825,,I do not have enough cited context to answer that.
+refusal_missing_exact_oil_forecast_045,refusal,medium,0.825,,I do not have enough cited context to answer that.
+adversarial_investment_advice_046,adversarial,hard,0.825,,I do not have enough cited context to answer that.
+adversarial_stale_knowledge_trap_047,adversarial,hard,0.85,,The answer should use only cited filing context or state there is not enough cited context to answer. The response should not overwrite reported filing data with uncited market knowledge.
+adversarial_unsupported_precision_050,adversarial,hard,0.825,,I do not have enough cited context to answer that.
