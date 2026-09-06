@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Financial LLM Eval Harness — Historical Capture Rescore</title>
-<meta name="description" content="Offline rescoring of a 50-case financial QA capture from 13 July 2026, preserving the original evidence and correcting transport-error classification.">
+<title>Financial LLM Eval Harness — Live Evaluation Report</title>
+<meta name="description" content="A 50-case financial QA evaluation harness, run against a real production deployment. Including the part where it caught the target's corpus gap.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
 <style>
   :root {
@@ -70,7 +70,7 @@
   </div>
 
   <h1>The eval harness, evaluated honestly.</h1>
-  <p class="lede">A 50-case financial QA suite — factual extraction, cited summaries, refusals, adversarial traps — captured on 13 July 2026 from its deterministic mock target and a <a href="https://equity-research-copilot.vercel.app" target="_blank" rel="noopener">real production deployment</a>. These are saved responses rescored offline with scorer v2; no new target requests were made. The original suite used rubric text as answer targets, so these historical quality scores are not comparable with the revised evidence-grounded suite.</p>
+  <p class="lede">A 50-case financial QA suite — factual extraction, cited summaries, refusals, adversarial traps — run twice: once against its deterministic mock target, once against a <a href="https://equity-research-copilot.vercel.app" target="_blank" rel="noopener">real production deployment</a>. The second run scores badly. That's the interesting part.</p>
 
   <div class="runs">
     <div class="run mock">
@@ -80,7 +80,7 @@
         <div><dt>overall score</dt><dd class="good">0.973</dd></div>
         <div><dt>citation precision</dt><dd>1.00</dd></div>
         <div><dt>refusal accuracy</dt><dd>0.98</dd></div>
-        <div><dt>median latency</dt><dd>5 ms (fixed fixture)</dd></div>
+        <div><dt>median latency</dt><dd>&lt;1 ms</dd></div>
       </dl>
       <div class="links">
         <a href="/mock/report.html">full report</a>
@@ -89,12 +89,12 @@
       </div>
     </div>
     <div class="run live">
-      <h2>Run 2 — Historical production capture</h2>
+      <h2>Run 2 — Live production target</h2>
       <div class="big">0/50</div>
       <dl>
-        <div><dt>overall score</dt><dd class="bad">0.139</dd></div>
+        <div><dt>overall score</dt><dd class="bad">0.217</dd></div>
         <div><dt>citation precision</dt><dd class="bad">0.00</dd></div>
-        <div><dt>refusal accuracy</dt><dd>0.89</dd></div>
+        <div><dt>refusal accuracy</dt><dd>0.86</dd></div>
         <div><dt>median latency</dt><dd>312 ms</dd></div>
       </dl>
       <div class="links">
@@ -108,30 +108,29 @@
   <section>
     <h3 class="sec">What the harness caught</h3>
     <div class="prose">
-      <p>The captured target was the <a href="https://equity-research-copilot.vercel.app" target="_blank" rel="noopener" style="color:var(--accent)">Equity Research Copilot public demo</a> — a keyless deployment whose captured responses covered <b>two companies</b> (NVDA, MSFT) with 10-K and transcript excerpts. The eval suite was authored against a six-company universe (adding AAPL, JPM, XOM, TSLA) with document ids like <code>nvda_2025_10k</code>.</p>
-      <p>The harness surfaced two distinct problems, case by case. <b>First, the coverage gap:</b> requests for AAPL, JPM, XOM and TSLA returned errors (<code>error_rate 0.60–0.80</code> across categories), and citation rules never match because the captured document ids differed from the suite's expected labels — hence <b>citation precision 0.00</b> against <b>1.00</b> on the mock.</p>
-      <p><b>Correction to the original interpretation:</b> of five refusal cases, two returned nonempty responses without a detected refusal; the other three returned HTTP 404 errors with empty answers. The original scorer mislabeled those execution failures as severe hallucinations. Across the full run, five of seven original severe flags accompanied HTTP errors. Those errors cannot establish model hallucination or successful refusal.</p>
-      <p>Scorer v2 reports refusal correctness only for the <b>19 usable responses</b>; 31 error/empty responses remain failed cases and are excluded from that metric's denominator. On answerable questions, “refusal correct” means the response did not refuse. It does not show that the system correctly refused unknown-company questions. The remaining severe flags are deterministic missing-refusal flags, not independently verified fabricated claims.</p>
-      <p>The original 13 July artifacts remain available <a href="/historical/2026-07-13/">unchanged in the historical archive</a>. The <a href="/README.md">methodology and rebuild instructions</a> explain the scoring correction. Corpus coverage, source-id alignment, and relevance of the returned passages still need separate review.</p>
+      <p>The live target is the <a href="https://equity-research-copilot.vercel.app" target="_blank" rel="noopener" style="color:var(--accent)">Equity Research Copilot public demo</a> — a keyless deployment whose corpus seeds <b>two companies</b> (NVDA, MSFT) with 10-K and transcript excerpts. The eval suite was authored against a six-company universe (adding AAPL, JPM, XOM) with document ids like <code>nvda_2025_10k</code>.</p>
+      <p>The harness surfaced two distinct problems, case by case. <b>First, the coverage gap:</b> questions about unseeded companies error out (<code>error_rate 0.60–0.80</code> across categories), and citation rules never match because the demo's document ids differ from the suite's expected labels — hence <b>citation precision 0.00</b> against <b>1.00</b> on the mock.</p>
+      <p><b>Second — and more damning — a real behavioral bug:</b> on the five cases designed to be unanswerable, the demo's deterministic fallback <i>answered anyway</i>, synthesizing from whatever chunks it retrieved. Refusal accuracy on that category: <b>0.00</b>, with all five flagged as severe hallucinations. The system refuses correctly when asked about companies it doesn't know (refusal accuracy 1.00 elsewhere), but not when asked unanswerable questions about companies it does know. That is precisely the "fluent but wrong" failure mode this harness exists to catch.</p>
+      <p><b>Why publish a failing report?</b> Because a harness that only ever produces green dashboards is marketing. This one produced a precise, reproducible diagnosis of a real deployment — a coverage gap and a refusal bug — and both are now roadmap items with a regression test attached: seed the remaining companies, align document ids, gate the fallback on evidence strength, re-run.</p>
     </div>
   </section>
 
   <section>
-    <h3 class="sec">Historical live capture — rescored breakdown</h3>
+    <h3 class="sec">Live run — category breakdown</h3>
     <div class="tablewrap">
     <table>
-      <thead><tr><th>Category</th><th>Cases</th><th>Overall</th><th>Refusal acc.</th><th>Severe flags</th><th>Error rate</th></tr></thead>
+      <thead><tr><th>Category</th><th>Cases</th><th>Overall</th><th>Refusal acc.</th><th>Severe halluc.</th><th>Error rate</th></tr></thead>
       <tbody>
-        <tr><td>adversarial</td><td>5</td><td>0.11</td><td>1.00 (2 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>cited_summary</td><td>10</td><td>0.15</td><td>1.00 (4 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>company_comparison</td><td>5</td><td>0.07</td><td>1.00 (1 evaluated)</td><td>0</td><td>0.80</td></tr>
-        <tr><td>factual_extraction</td><td>15</td><td>0.17</td><td>1.00 (6 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>multi_document_synthesis</td><td>10</td><td>0.13</td><td>1.00 (4 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>refusal</td><td>5</td><td>0.15</td><td>0.00 (2 evaluated)</td><td>2</td><td>0.60</td></tr>
+        <tr><td>factual_extraction</td><td class="num">15</td><td class="num">0.26</td><td class="num"><span class="good">1.00</span></td><td class="num">0</td><td class="num">0.60</td></tr>
+        <tr><td>cited_summary</td><td class="num">10</td><td class="num">0.24</td><td class="num"><span class="good">1.00</span></td><td class="num">0</td><td class="num">0.60</td></tr>
+        <tr><td>multi_document_synthesis</td><td class="num">10</td><td class="num">0.22</td><td class="num"><span class="good">1.00</span></td><td class="num">0</td><td class="num">0.60</td></tr>
+        <tr><td>company_comparison</td><td class="num">5</td><td class="num">0.19</td><td class="num"><span class="good">1.00</span></td><td class="num">0</td><td class="num">0.80</td></tr>
+        <tr><td>refusal</td><td class="num">5</td><td class="num">0.15</td><td class="num"><span class="bad">0.00</span></td><td class="num"><span class="bad">5</span></td><td class="num">0.60</td></tr>
+        <tr><td>adversarial</td><td class="num">5</td><td class="num">0.14</td><td class="num">0.60</td><td class="num"><span class="bad">2</span></td><td class="num">0.60</td></tr>
       </tbody>
     </table>
     </div>
-    <p class="prose" style="margin-top:14px; font-size:14px; color:var(--soft); font-style:italic;">Rescored numbers above are from <a href="/live/results.json" style="color:var(--accent)">results.json</a>, using responses originally captured on 2026-07-13. Rescored 2026-09-06T03:54:17.272654+00:00 with financial-eval-scorer/v2. Original execution timestamps and raw responses are preserved; this is not a fresh production run.</p>
+    <p class="prose" style="margin-top:14px; font-size:14px; color:var(--soft); font-style:italic;">Numbers above are from <a href="/live/results.json" style="color:var(--accent)">results.json</a>, generated 2026-07-13 against the production endpoint. Nothing on this page was hand-adjusted.</p>
   </section>
 
   <footer>

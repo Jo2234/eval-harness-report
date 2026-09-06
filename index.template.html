@@ -75,11 +75,11 @@
   <div class="runs">
     <div class="run mock">
       <h2>Run 1 — Mock baseline (plumbing check)</h2>
-      <div class="big">42/50</div>
+      <div class="big">$mock_passed/50</div>
       <dl>
-        <div><dt>overall score</dt><dd class="good">0.973</dd></div>
+        <div><dt>overall score</dt><dd class="good">$mock_overall</dd></div>
         <div><dt>citation precision</dt><dd>1.00</dd></div>
-        <div><dt>refusal accuracy</dt><dd>0.98</dd></div>
+        <div><dt>refusal accuracy</dt><dd>$mock_refusal</dd></div>
         <div><dt>median latency</dt><dd>5 ms (fixed fixture)</dd></div>
       </dl>
       <div class="links">
@@ -90,11 +90,11 @@
     </div>
     <div class="run live">
       <h2>Run 2 — Historical production capture</h2>
-      <div class="big">0/50</div>
+      <div class="big">$live_passed/50</div>
       <dl>
-        <div><dt>overall score</dt><dd class="bad">0.139</dd></div>
+        <div><dt>overall score</dt><dd class="bad">$live_overall</dd></div>
         <div><dt>citation precision</dt><dd class="bad">0.00</dd></div>
-        <div><dt>refusal accuracy</dt><dd>0.89</dd></div>
+        <div><dt>refusal accuracy</dt><dd>$live_refusal</dd></div>
         <div><dt>median latency</dt><dd>312 ms</dd></div>
       </dl>
       <div class="links">
@@ -111,7 +111,7 @@
       <p>The captured target was the <a href="https://equity-research-copilot.vercel.app" target="_blank" rel="noopener" style="color:var(--accent)">Equity Research Copilot public demo</a> — a keyless deployment whose captured responses covered <b>two companies</b> (NVDA, MSFT) with 10-K and transcript excerpts. The eval suite was authored against a six-company universe (adding AAPL, JPM, XOM, TSLA) with document ids like <code>nvda_2025_10k</code>.</p>
       <p>The harness surfaced two distinct problems, case by case. <b>First, the coverage gap:</b> requests for AAPL, JPM, XOM and TSLA returned errors (<code>error_rate 0.60–0.80</code> across categories), and citation rules never match because the captured document ids differed from the suite's expected labels — hence <b>citation precision 0.00</b> against <b>1.00</b> on the mock.</p>
       <p><b>Correction to the original interpretation:</b> of five refusal cases, two returned nonempty responses without a detected refusal; the other three returned HTTP 404 errors with empty answers. The original scorer mislabeled those execution failures as severe hallucinations. Across the full run, five of seven original severe flags accompanied HTTP errors. Those errors cannot establish model hallucination or successful refusal.</p>
-      <p>Scorer v2 reports refusal correctness only for the <b>19 usable responses</b>; 31 error/empty responses remain failed cases and are excluded from that metric's denominator. On answerable questions, “refusal correct” means the response did not refuse. It does not show that the system correctly refused unknown-company questions. The remaining severe flags are deterministic missing-refusal flags, not independently verified fabricated claims.</p>
+      <p>Scorer v2 reports refusal correctness only for the <b>$live_evaluated usable responses</b>; $live_unavailable error/empty responses remain failed cases and are excluded from that metric's denominator. On answerable questions, “refusal correct” means the response did not refuse. It does not show that the system correctly refused unknown-company questions. The remaining severe flags are deterministic missing-refusal flags, not independently verified fabricated claims.</p>
       <p>The original 13 July artifacts remain available <a href="/historical/2026-07-13/">unchanged in the historical archive</a>. The <a href="/README.md">methodology and rebuild instructions</a> explain the scoring correction. Corpus coverage, source-id alignment, and relevance of the returned passages still need separate review.</p>
     </div>
   </section>
@@ -122,16 +122,11 @@
     <table>
       <thead><tr><th>Category</th><th>Cases</th><th>Overall</th><th>Refusal acc.</th><th>Severe flags</th><th>Error rate</th></tr></thead>
       <tbody>
-        <tr><td>adversarial</td><td>5</td><td>0.11</td><td>1.00 (2 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>cited_summary</td><td>10</td><td>0.15</td><td>1.00 (4 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>company_comparison</td><td>5</td><td>0.07</td><td>1.00 (1 evaluated)</td><td>0</td><td>0.80</td></tr>
-        <tr><td>factual_extraction</td><td>15</td><td>0.17</td><td>1.00 (6 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>multi_document_synthesis</td><td>10</td><td>0.13</td><td>1.00 (4 evaluated)</td><td>0</td><td>0.60</td></tr>
-        <tr><td>refusal</td><td>5</td><td>0.15</td><td>0.00 (2 evaluated)</td><td>2</td><td>0.60</td></tr>
+$category_rows
       </tbody>
     </table>
     </div>
-    <p class="prose" style="margin-top:14px; font-size:14px; color:var(--soft); font-style:italic;">Rescored numbers above are from <a href="/live/results.json" style="color:var(--accent)">results.json</a>, using responses originally captured on 2026-07-13. Rescored 2026-09-06T03:54:17.272654+00:00 with financial-eval-scorer/v2. Original execution timestamps and raw responses are preserved; this is not a fresh production run.</p>
+    <p class="prose" style="margin-top:14px; font-size:14px; color:var(--soft); font-style:italic;">Rescored numbers above are from <a href="/live/results.json" style="color:var(--accent)">results.json</a>, using responses originally captured on 2026-07-13. Rescored $rescored_at with $scorer_version. Original execution timestamps and raw responses are preserved; this is not a fresh production run.</p>
   </section>
 
   <footer>
