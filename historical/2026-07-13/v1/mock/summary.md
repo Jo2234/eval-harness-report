@@ -1,9 +1,5 @@
 # Financial QA Evaluation Report
 
-Historical response rescore: saved answers were rescored offline; no new target requests were made.
-Captured: `2026-07-13T05:29:17.875307+00:00`; rescored: `2026-09-06T03:54:17.272654+00:00`.
-Original artifact: `historical/2026-07-13/v1/mock/results.json`.
-
 Target: `mock`
 Pass: `True`
 
@@ -13,17 +9,9 @@ Pass: `True`
 - `started_at`: 2026-07-13T05:29:17.875307+00:00
 - `duration_ms`: 4
 - `pass`: True
-- `scorer_version`: financial-eval-scorer/v2
-- `suite_version`: legacy-core/v1
-- `rubric_evaluation`: not_performed
 
-The pass gate covers deterministic checks only; contextual judge rubrics are not automatically evaluated. Behavior metrics apply only to nonempty, error-free responses. Error and empty responses remain failed cases; refusal accuracy excludes them.
-
-Evaluation mode: `historical-capture-rescore`.
 ## Aggregate Metrics
 - `total_cases`: 50
-- `behavior_evaluated_cases`: 50
-- `behavior_unavailable_cases`: 0
 - `passed_cases`: 42
 - `failed_cases`: 8
 - `overall_score`: 0.9725000000000005
@@ -68,7 +56,7 @@ Evaluation mode: `historical-capture-rescore`.
 | adversarial_stale_knowledge_trap_047 | adversarial | 0.850 |  |
 | adversarial_unsupported_precision_050 | adversarial | 0.825 |  |
 
-## Deterministic Severe Flags
+## Severe Hallucinations
 None
 
 ## Slowest Cases
