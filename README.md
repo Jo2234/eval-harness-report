@@ -1,5 +1,7 @@
 # Historical financial QA evaluation, corrected
 
+A supporting failure-analysis case study for the [Financial LLM Evaluation Harness](https://github.com/Jo2234/financial-llm-eval-harness), with saved responses, scoring corrections, and reproducible reports.
+
 The responses were captured on **13 July 2026**. The root `live/` and `mock/` reports rescore those same saved responses offline with `financial-eval-scorer/v2` and the **unchanged legacy suite** in `provenance/legacy_core_v1.yaml`. They are not a fresh production run and do not measure the revised evidence-grounded quality suite.
 
 The original HTML, JSON, Markdown, CSV, and homepage are preserved byte-for-byte in `historical/2026-07-13/v1/`. Corrected JSON retains the original execution timestamp, latency, duration, raw responses, full original execution metadata, SHA-256 of the original artifact and suite, and a separate rescoring timestamp. No model/API requests are made by rebuilding.
