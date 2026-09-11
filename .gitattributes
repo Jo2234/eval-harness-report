@@ -1,0 +1,3 @@
+# Preserve captured artifacts byte-for-byte, including CSV CRLF and quoted whitespace.
+current/** -text
+current/**/*.csv whitespace=-blank-at-eol

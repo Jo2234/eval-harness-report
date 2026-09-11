@@ -1,0 +1,23 @@
+{
+  "sources.json": "13433cd0353e5a1f1efa859b3f6d935e4e3a66f7739b8e9c691463d9f1156316",
+  "config.json": "caf825e7ecb778411bd0be92fee413a227be229bacab7b28f79c262d89389976",
+  "PUBLIC_EXPORT.json": "791248bb70edbd343cbf5a0ba001174e9038ca9a6ba8a9e09e6e09e8ec764876",
+  "ORIGINAL_SHA256SUMS.json": "4556e4f64e6f353365d14f896187652876edfda33c3f9b4b0ad7bb55c4b000b9",
+  "captures.jsonl": "30e2a583987aa5a30c5974e7b366a9d3e55f2faf21ee22fe46de71088b24ee90",
+  "ingestion.json": "ce8146d820fafa207742c14bd9250d22c91b6147b2ad0183cd0a2501f2899c43",
+  "document-map.json": "24182179cd53f551e24c281e7816cd54b96eab40894f098312b2abde89d5cef8",
+  "copilot-local/failures.csv": "eb7f453f181736ece0c24c91c28d6e8418313d1fba698af2f618368c15226a2e",
+  "copilot-local/summary.md": "c837f46c5d501c98fd9f8f5dfc431f5845f8f48f9df906306c840910e3b8e13a",
+  "copilot-local/results.json": "f7133ab77b0858efdd5794158148dcfee6cb9c10fb8e4191672675477326243e",
+  "copilot-local/metrics.csv": "e08752472ad4eb398c144ca5223cbaf55e5f484441d03a4c8d15eb5a584d10f8",
+  "copilot-local/cases.jsonl": "a1d6e2071daac386065dabb7cab4f83fb3a318000425de8873e07eb773e41ad1",
+  "copilot-local/manifest.json": "6c0b6204788e3231799db060c9bd30d0d1630eb90db85f89120573b3f8769ef3",
+  "copilot-local/report.html": "9a53cff54f7c3eb21539368559e4d91bf7f058da30829fb8f4f6c13bb457886b",
+  "lexical-baseline/failures.csv": "109a4d1d5749a93e271d9aa0b0d9d153f80980b7029f5ddd8ab37dd1fec50be1",
+  "lexical-baseline/summary.md": "ab2ea680541fa69c75e8e05773c0dd31d26d8e0079be10cb1d845af82ff47788",
+  "lexical-baseline/results.json": "4cc037186892aeed2323c6db7c2c6e71bee845eef0b8765471cc30542c0f412b",
+  "lexical-baseline/metrics.csv": "7e2b260dcee1d955a0710208e7943c4ad5f187c34733c858fbeb34be8c24710c",
+  "lexical-baseline/cases.jsonl": "01c4ab1e5404b2bf6fdca6e701a9f4bad446e571f7d30c0bafe3cc2b71bed80e",
+  "lexical-baseline/manifest.json": "a78c83b6cac37ad234e7b68bcdaa355c67d2eb4911f0e33747ef74ea5b74df5d",
+  "lexical-baseline/report.html": "7256ac7149664f9992959661a29931ea1199613c00b0cbc297c5cc6d8d9b6ce0"
+}
