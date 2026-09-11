@@ -1,0 +1,55 @@
+{
+  "capture_started_at": "2026-09-11T04:08:22.238427+00:00",
+  "suite_sha256": "1eaf08f68d6df324e95df38f6b6ac87850d2125c0602f61249ea467caaf9e0cb",
+  "evidence_manifest_sha256": "0ca5c91fd55c2fe1fc654c203f4f1504f7b65f150668a44614fcc5a4528ba1e1",
+  "runner_sha256": "a2ab152a4ac60838279e7f07082c53ff6a705eeaab13a818f53ae2a294233e8a",
+  "harness": {
+    "head": "b0a50bfb32b899a4a67db8d86d71a48e3d1d07b4",
+    "worktree_status": ""
+  },
+  "copilot": {
+    "head": "9f1fc77a76da3b6b0761c53f82e7c18b1c96fb34",
+    "worktree_status": ""
+  },
+  "scorer_version": "financial-eval-scorer/v2",
+  "python": "3.11.2",
+  "api_base_url": "http://127.0.0.1:8766",
+  "api_provider": "local",
+  "api_model": "local-deterministic-grounded-v1",
+  "provider_selection": "Ollama 127.0.0.1:11434 unavailable; explicitly selected AIERC_LLM_PROVIDER=local. No LLM or paid API was used.",
+  "api_request_fields": [
+    "question",
+    "company_ids",
+    "top_k"
+  ],
+  "api_top_k": 8,
+  "baseline": {
+    "algorithm": "unique lowercase alphanumeric query-token overlap, stopwords removed",
+    "chunk_characters": 1200,
+    "stride_characters": 1200,
+    "top_k": 3,
+    "answer_characters_per_chunk": 400,
+    "ties": "document ID then character offset ascending",
+    "scope": "all documents for requested company tickers, no case-specific document filter",
+    "refusal": "only when every chunk has zero query-token overlap",
+    "model": "none"
+  },
+  "source_documents": 16,
+  "source_scope": "complete primary documents via production HTML/PDF extraction, not selected answer passages",
+  "source_retrieved_on": "2026-09-06",
+  "source_provenance_sha256": "8e1f9de31df2f6d278ad98f3de1dca0c1fba56d0f986d4595c3614bede9ae730",
+  "document_map_sha256": "7ef2a6d8f182ba566f2035ded0a79bf18450ad6059e7261a02679807712fac43",
+  "ingestion_manifest_sha256": "67d10d9c98fbc71a16f61316d0dc1a85fe73ca40ccf494f0765b049a39db6859",
+  "copilot_backend_tree": "a2f3263e4ead637c13b70d2528e8523931883018",
+  "api_settings": {
+    "embedding_dimensions": 128,
+    "chunk_target_tokens": 800,
+    "chunk_overlap_tokens": 80,
+    "retrieval_min_score": 0.04,
+    "max_upload_mb": 10
+  },
+  "api_chunk_count": 1311,
+  "ordering": "suite order; sequential API call followed by baseline for each case; no retries or warmup",
+  "latency": "wall time of each answer call; API includes loopback HTTP and persistence, baseline is in-process; excludes corpus ingestion and baseline indexing",
+  "rubric_review": "not performed by scorer; selected responses receive separate qualitative review"
+}

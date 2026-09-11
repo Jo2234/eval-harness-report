@@ -1,0 +1,349 @@
+{
+  "timestamp_utc": "2026-09-11T04:07:22.950923+00:00",
+  "equity_base_sha": "e667520fad121971b96857e161c3491f9a65efcf",
+  "endpoint": "http://127.0.0.1:8766",
+  "provider": "local",
+  "model": "local-deterministic-grounded-v1",
+  "seed": false,
+  "settings": {
+    "embedding_dimensions": 128,
+    "chunk_target_tokens": 800,
+    "chunk_overlap_tokens": 80,
+    "retrieval_min_score": 0.04,
+    "max_upload_mb": 10
+  },
+  "manifest_sha256": "0ca5c91fd55c2fe1fc654c203f4f1504f7b65f150668a44614fcc5a4528ba1e1",
+  "companies": {
+    "NVDA": "f1f26662-bdb2-4470-a2e4-261dbeda17cd",
+    "AAPL": "831e20d1-6fc0-4d74-9e97-6f47306263c0",
+    "MSFT": "4f42e928-b8d8-4f5c-a50a-308c1cb4940f",
+    "JPM": "b5ccf718-6b4c-4774-a02f-68b1174d2528",
+    "XOM": "5c03a490-ae2e-4efc-8eb4-f58ab7447aa7",
+    "TSLA": "675a69f7-2645-40e9-ae5b-63156b0938d0"
+  },
+  "document_uuid_to_canonical": {
+    "83439311-ddaf-413d-ac0b-5e620114d704": "nvda_2025_10k",
+    "00ce7049-e482-41a1-b4e3-0149f99f33ea": "nvda_2026_q1_10q",
+    "213a8ca1-a083-405a-a0d9-d8eb749addac": "aapl_2025_10k",
+    "a7ddea14-7dfa-4509-a1ac-47f0a1b90eb9": "aapl_2026_q1_10q",
+    "b57d060b-3e0f-4e58-abc5-101a2a273556": "msft_2025_10k",
+    "00da7e42-5e33-40da-a2d8-194ac094a1e9": "msft_2026_q1_10q",
+    "e95b4a43-8985-4afc-a5b1-3119ce068817": "jpm_2025_10k",
+    "a49c049c-0cc8-4302-bee2-1fd5ffb947f4": "jpm_2026_q1_10q",
+    "eb76c455-f728-41cd-b64e-73bb9e3e2afa": "xom_2025_10k",
+    "1e5df31d-c6de-47e0-918e-3b77ece50f6f": "xom_2026_q1_10q",
+    "b90b0d09-b21a-436d-bfa4-cf94636d0285": "tsla_2025_10k",
+    "20c4eaae-d8b4-432a-9152-4f2f728d7be2": "tsla_2026_q1_10q",
+    "5b3f655e-3b7a-4607-8fc8-54b8049c3b27": "nvda_2026_q1_earnings_call",
+    "8363d97b-77bc-4ac0-84a2-f9cde42e73ca": "msft_2026_q1_earnings_call",
+    "059970b8-76d7-4cfc-a9e5-9343ad6ccd74": "jpm_2026_q1_earnings_call",
+    "ce7a7564-74b0-420b-87c5-465168820d15": "aapl_2026_q1_earnings_release"
+  },
+  "health": {
+    "status": "ok",
+    "data_dir": "/Users/johanvaz/Documents/Codex/2026-09-06/i-want-you-to-open-up/work/github-audit/portfolio-proof/benchmark-data/source-faithful-state",
+    "companies": 6,
+    "documents": 16,
+    "chunks": 1311
+  },
+  "documents": [
+    {
+      "canonical_id": "nvda_2025_10k",
+      "uuid": "83439311-ddaf-413d-ac0b-5e620114d704",
+      "company_uuid": "f1f26662-bdb2-4470-a2e4-261dbeda17cd",
+      "raw_sha256": "dae19486be264fd26eb00a7f920dc641041a261c81bc8c03b678eea947de4856",
+      "upload_sha256": "2406f22c6e46cd327a031020471f3d65b69268ef5f1a77cc872899c9c5fc38b5",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "2406f22c6e46cd327a031020471f3d65b69268ef5f1a77cc872899c9c5fc38b5",
+      "byte_count": 350556,
+      "metadata": {
+        "title": "nvda_2025_10k",
+        "document_type": "10-k",
+        "fiscal_year": "2025",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+        "period_end_date": "2025-01-26"
+      },
+      "chunk_count": 91
+    },
+    {
+      "canonical_id": "nvda_2026_q1_10q",
+      "uuid": "00ce7049-e482-41a1-b4e3-0149f99f33ea",
+      "company_uuid": "f1f26662-bdb2-4470-a2e4-261dbeda17cd",
+      "raw_sha256": "9f71aa343f38059e3e99cc1c37d97efee9971f4e3fd33377e363064c3a0168f4",
+      "upload_sha256": "67efb7fb751e9de548b32d8a9d92c036e2665bb88725da6c15f2862a0b4da759",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "67efb7fb751e9de548b32d8a9d92c036e2665bb88725da6c15f2862a0b4da759",
+      "byte_count": 135097,
+      "metadata": {
+        "title": "nvda_2026_q1_10q",
+        "document_type": "10-q",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm",
+        "period_end_date": "2025-04-27",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 40
+    },
+    {
+      "canonical_id": "aapl_2025_10k",
+      "uuid": "213a8ca1-a083-405a-a0d9-d8eb749addac",
+      "company_uuid": "831e20d1-6fc0-4d74-9e97-6f47306263c0",
+      "raw_sha256": "548ae59778cf08ee0f2ee088e7ece20d947076c3c01f74d2d65db4c2777e436a",
+      "upload_sha256": "cd2229e6c64af956b47536e2821774e70f349d8a2387229bfa64fadcdbf6d996",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "cd2229e6c64af956b47536e2821774e70f349d8a2387229bfa64fadcdbf6d996",
+      "byte_count": 210636,
+      "metadata": {
+        "title": "aapl_2025_10k",
+        "document_type": "10-k",
+        "fiscal_year": "2025",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+        "period_end_date": "2025-09-27"
+      },
+      "chunk_count": 64
+    },
+    {
+      "canonical_id": "aapl_2026_q1_10q",
+      "uuid": "a7ddea14-7dfa-4509-a1ac-47f0a1b90eb9",
+      "company_uuid": "831e20d1-6fc0-4d74-9e97-6f47306263c0",
+      "raw_sha256": "3a3d9336a924488440e83b811ba354f654738cc822b6eb69ed6063e8cf348542",
+      "upload_sha256": "668010dca70bf43f610534b580fe2c55314c8e235509b9efffd48c337a81a185",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "668010dca70bf43f610534b580fe2c55314c8e235509b9efffd48c337a81a185",
+      "byte_count": 58892,
+      "metadata": {
+        "title": "aapl_2026_q1_10q",
+        "document_type": "10-q",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm",
+        "period_end_date": "2025-12-27",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 18
+    },
+    {
+      "canonical_id": "msft_2025_10k",
+      "uuid": "b57d060b-3e0f-4e58-abc5-101a2a273556",
+      "company_uuid": "4f42e928-b8d8-4f5c-a50a-308c1cb4940f",
+      "raw_sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+      "upload_sha256": "1f0ccbf993d1d0231499fe3891765182c43478bf508b924a7db1c2c9a45b21db",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "1f0ccbf993d1d0231499fe3891765182c43478bf508b924a7db1c2c9a45b21db",
+      "byte_count": 230489,
+      "metadata": {
+        "title": "msft_2025_10k",
+        "document_type": "10-k",
+        "fiscal_year": "2025",
+        "source_url": "https://www.microsoft.com/investor/reports/ar25/",
+        "period_end_date": "2025-06-30"
+      },
+      "chunk_count": 53
+    },
+    {
+      "canonical_id": "msft_2026_q1_10q",
+      "uuid": "00da7e42-5e33-40da-a2d8-194ac094a1e9",
+      "company_uuid": "4f42e928-b8d8-4f5c-a50a-308c1cb4940f",
+      "raw_sha256": "c963d7503907384926e685a27064574fb9fbfa1adf9e2ececca4b2c3b7a35e12",
+      "upload_sha256": "7c6d47ab49f823ef9e0e119895fac982fd300528efc24aca0094749ec653d602",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "7c6d47ab49f823ef9e0e119895fac982fd300528efc24aca0094749ec653d602",
+      "byte_count": 188543,
+      "metadata": {
+        "title": "msft_2026_q1_10q",
+        "document_type": "10-q",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/msft-20250930.htm",
+        "period_end_date": "2025-09-30",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 64
+    },
+    {
+      "canonical_id": "jpm_2025_10k",
+      "uuid": "e95b4a43-8985-4afc-a5b1-3119ce068817",
+      "company_uuid": "b5ccf718-6b4c-4774-a02f-68b1174d2528",
+      "raw_sha256": "4d9febdbc2038dcdca8726053286df4cbbfd48885051cbd781efcc3becb66a23",
+      "upload_sha256": "213c316c6b92d97b6cbbb75c07a4ec7109ecd6bf9148efc2f2a0444ac4fc3f45",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "213c316c6b92d97b6cbbb75c07a4ec7109ecd6bf9148efc2f2a0444ac4fc3f45",
+      "byte_count": 1211395,
+      "metadata": {
+        "title": "jpm_2025_10k",
+        "document_type": "10-k",
+        "fiscal_year": "2025",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
+        "period_end_date": "2025-12-31"
+      },
+      "chunk_count": 411
+    },
+    {
+      "canonical_id": "jpm_2026_q1_10q",
+      "uuid": "a49c049c-0cc8-4302-bee2-1fd5ffb947f4",
+      "company_uuid": "b5ccf718-6b4c-4774-a02f-68b1174d2528",
+      "raw_sha256": "08e5a5c3e5a3685b1a5c783eeb9f11808dea535f7a2fb1e139c6b9319d35afe9",
+      "upload_sha256": "ef3d9b7a6670cd37b1531c41503d264efa3c959a01255e16df98d94af4907b2e",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "ef3d9b7a6670cd37b1531c41503d264efa3c959a01255e16df98d94af4907b2e",
+      "byte_count": 582674,
+      "metadata": {
+        "title": "jpm_2026_q1_10q",
+        "document_type": "10-q",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026029344/jpm-20260331.htm",
+        "period_end_date": "2026-03-31",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 175
+    },
+    {
+      "canonical_id": "xom_2025_10k",
+      "uuid": "eb76c455-f728-41cd-b64e-73bb9e3e2afa",
+      "company_uuid": "5c03a490-ae2e-4efc-8eb4-f58ab7447aa7",
+      "raw_sha256": "3591db2246ab14c52465d32f69b459b000919c141a5656c81cf59acf0a805be8",
+      "upload_sha256": "c5bedcde1df7aa8436d16a18d352807d80f828ce03e7049477fc31ecb88b6710",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "c5bedcde1df7aa8436d16a18d352807d80f828ce03e7049477fc31ecb88b6710",
+      "byte_count": 431940,
+      "metadata": {
+        "title": "xom_2025_10k",
+        "document_type": "10-k",
+        "fiscal_year": "2025",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/xom-20251231.htm",
+        "period_end_date": "2025-12-31"
+      },
+      "chunk_count": 144
+    },
+    {
+      "canonical_id": "xom_2026_q1_10q",
+      "uuid": "1e5df31d-c6de-47e0-918e-3b77ece50f6f",
+      "company_uuid": "5c03a490-ae2e-4efc-8eb4-f58ab7447aa7",
+      "raw_sha256": "09f0d43968999f2ca0f14224e5acf2cf1c477a97c5bedef03edc55f072d5dff9",
+      "upload_sha256": "6a92afdaaf001f8d4fc1901f057f8de71230ebb906892573081e293554ecce6b",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "6a92afdaaf001f8d4fc1901f057f8de71230ebb906892573081e293554ecce6b",
+      "byte_count": 74502,
+      "metadata": {
+        "title": "xom_2026_q1_10q",
+        "document_type": "10-q",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000067/xom-20260331.htm",
+        "period_end_date": "2026-03-31",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 22
+    },
+    {
+      "canonical_id": "tsla_2025_10k",
+      "uuid": "b90b0d09-b21a-436d-bfa4-cf94636d0285",
+      "company_uuid": "675a69f7-2645-40e9-ae5b-63156b0938d0",
+      "raw_sha256": "90d5d2bc4057df41c645f85dcebe575af9b0953a6a1902d189297bec17fd440a",
+      "upload_sha256": "9c2892b6e635a274e75c5fe006bd99b378ffb92717f0c3aa57507ac5df8bfa6d",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "9c2892b6e635a274e75c5fe006bd99b378ffb92717f0c3aa57507ac5df8bfa6d",
+      "byte_count": 399315,
+      "metadata": {
+        "title": "tsla_2025_10k",
+        "document_type": "10-k",
+        "fiscal_year": "2025",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "period_end_date": "2025-12-31"
+      },
+      "chunk_count": 129
+    },
+    {
+      "canonical_id": "tsla_2026_q1_10q",
+      "uuid": "20c4eaae-d8b4-432a-9152-4f2f728d7be2",
+      "company_uuid": "675a69f7-2645-40e9-ae5b-63156b0938d0",
+      "raw_sha256": "0828884cae209013b718cc61762d476aa5fa121db235735cd56eb66f35b0c788",
+      "upload_sha256": "35fa6967adad15bf72b14589ca3ffea5b90810ea39b7280d6b620ea49a80308c",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "35fa6967adad15bf72b14589ca3ffea5b90810ea39b7280d6b620ea49a80308c",
+      "byte_count": 124590,
+      "metadata": {
+        "title": "tsla_2026_q1_10q",
+        "document_type": "10-q",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+        "period_end_date": "2026-03-31",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 43
+    },
+    {
+      "canonical_id": "nvda_2026_q1_earnings_call",
+      "uuid": "5b3f655e-3b7a-4607-8fc8-54b8049c3b27",
+      "company_uuid": "f1f26662-bdb2-4470-a2e4-261dbeda17cd",
+      "raw_sha256": "22cb530f2e7b3ee72c4fa6bd369ffc6dc687b263eef121b4305d5762a48c0c21",
+      "upload_sha256": "22cb530f2e7b3ee72c4fa6bd369ffc6dc687b263eef121b4305d5762a48c0c21",
+      "extraction_method": "raw PDF through production parse_document",
+      "derived_text_sha256": "887c95896a2a46976e97139ebeec8291fe7d5af291d408f3484b7dfa660ff08c",
+      "byte_count": 283943,
+      "metadata": {
+        "title": "nvda_2026_q1_earnings_call",
+        "document_type": "earnings_transcript",
+        "fiscal_year": "2026",
+        "source_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/q1/NVDA-Q1-2026-Earnings-Call-28-May-2025-5_00-PM-ET.pdf",
+        "period_end_date": "2025-04-27",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 16
+    },
+    {
+      "canonical_id": "msft_2026_q1_earnings_call",
+      "uuid": "8363d97b-77bc-4ac0-84a2-f9cde42e73ca",
+      "company_uuid": "4f42e928-b8d8-4f5c-a50a-308c1cb4940f",
+      "raw_sha256": "4f3d9cbc53e31388f2074c3e491eaf37b8012efa169213722622d3b35cf743c7",
+      "upload_sha256": "3b7551aceaf1faafd248187ff4a027f60f1ef49425ced81bb2a1653635fd4414",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "3b7551aceaf1faafd248187ff4a027f60f1ef49425ced81bb2a1653635fd4414",
+      "byte_count": 56161,
+      "metadata": {
+        "title": "msft_2026_q1_earnings_call",
+        "document_type": "earnings_transcript",
+        "fiscal_year": "2026",
+        "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "period_end_date": "2025-09-30",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 14
+    },
+    {
+      "canonical_id": "jpm_2026_q1_earnings_call",
+      "uuid": "059970b8-76d7-4cfc-a9e5-9343ad6ccd74",
+      "company_uuid": "b5ccf718-6b4c-4774-a02f-68b1174d2528",
+      "raw_sha256": "0b97af7b67e8c14fd812a7e6ece55ea74005d3968b942560db2e558ea96f63f9",
+      "upload_sha256": "0b97af7b67e8c14fd812a7e6ece55ea74005d3968b942560db2e558ea96f63f9",
+      "extraction_method": "raw PDF through production parse_document",
+      "derived_text_sha256": "795cfd9e5f5310308641ac0c1a38e989f0aca22edbd0594f8bad90c93ca9037b",
+      "byte_count": 543920,
+      "metadata": {
+        "title": "jpm_2026_q1_earnings_call",
+        "document_type": "earnings_transcript",
+        "fiscal_year": "2026",
+        "source_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/1st-quarter/1q26-earnings-transcript.pdf",
+        "period_end_date": "2026-03-31",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 24
+    },
+    {
+      "canonical_id": "aapl_2026_q1_earnings_release",
+      "uuid": "ce7a7564-74b0-420b-87c5-465168820d15",
+      "company_uuid": "831e20d1-6fc0-4d74-9e97-6f47306263c0",
+      "raw_sha256": "28d8600ea68c13702a58336336c035843df7989d96b4edb90468fb56b1a1b6b0",
+      "upload_sha256": "263134aaf7716b7ea816f314c4cbefab92b61b6bec2af0629ad4da77e831177d",
+      "extraction_method": "sec.html_to_text, complete text without SEC download truncation",
+      "derived_text_sha256": "263134aaf7716b7ea816f314c4cbefab92b61b6bec2af0629ad4da77e831177d",
+      "byte_count": 10151,
+      "metadata": {
+        "title": "aapl_2026_q1_earnings_release",
+        "document_type": "8-k",
+        "fiscal_year": "2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+        "period_end_date": "2025-12-27",
+        "fiscal_quarter": "1"
+      },
+      "chunk_count": 3
+    }
+  ]
+}

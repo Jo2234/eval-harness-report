@@ -1,4 +1,14 @@
-# Historical financial QA evaluation, corrected
+# Financial QA evaluation reports
+
+## Fresh comparison — 11 September 2026
+
+[Read the new comparison](current/2026-09-11/index.html) and [methodology/reproduction instructions](benchmark/README.md). Fifty current factual-suite cases were freshly executed against an isolated Equity Copilot API and a simple lexical retrieval baseline using 16 complete, hash-verified source documents. Both targets are deterministic and use **no LLM**.
+
+The Copilot passed **0/50** strict cases; the baseline passed **2/50**. Both had zero transport errors and missed all seven expected refusals. Public exports omit extractive response prose while retaining original response hashes, citation metadata and unchanged scores; complete captures are retained locally. These results expose retrieval, answer coverage, citation alignment, and refusal limitations; they are not evidence of production readiness. See the [qualitative review](current/2026-09-11/REVIEW.md) for score limitations and representative failures.
+
+The fresh run is separate from the July captures below. Original reports, fixtures, and provenance remain preserved.
+
+## Historical financial QA evaluation, corrected
 
 A supporting failure-analysis case study for the [Financial LLM Evaluation Harness](https://github.com/Jo2234/financial-llm-eval-harness), with saved responses, scoring corrections, and reproducible reports.
 

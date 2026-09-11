@@ -1,0 +1,29 @@
+{
+  "schema": "financial-eval-run-manifest/v1",
+  "artifacts": [
+    {
+      "name": "cases.jsonl",
+      "bytes": 488962
+    },
+    {
+      "name": "failures.csv",
+      "bytes": 7508
+    },
+    {
+      "name": "metrics.csv",
+      "bytes": 7898
+    },
+    {
+      "name": "report.html",
+      "bytes": 9532
+    },
+    {
+      "name": "results.json",
+      "bytes": 671465
+    },
+    {
+      "name": "summary.md",
+      "bytes": 7399
+    }
+  ]
+}
