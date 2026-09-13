@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresh financial QA comparison · 11 September 2026</title>
+<style>$style</style>
+</head>
+<body>
+<a class="skip" href="#comparison">Skip to comparison</a>
+<main>
+<header class="masthead">
+<a class="brand" href="#">
+<span class="brand-mark" aria-hidden="true">ƒ</span>Financial QA / Evaluation lab</a>
+<nav class="nav-links" aria-label="Main navigation">
+<a href="../../benchmark/methodology.html">Methodology</a>
+<a href="https://github.com/Jo2234/financial-llm-eval-harness">Source ↗</a>
+</nav>
+</header>
+<header class="hero overview-hero">
+<p class="eyebrow">
+<span class="pill">Deterministic · No LLM</span>Captured 11 September 2026</p>
+<h1>Financial answers,<br>put to the test.</h1>
+<div class="intro">
+<p class="lede">Two retrieval systems. The same 50 source-grounded questions. A transparent look at what passes, what fails, and what the scores actually tell us.</p>
+<div class="actions">
+<a class="button" href="#comparison">Compare the systems <span aria-hidden="true">↓</span>
+</a>
+<a href="review.html">Explore the failure analysis ↗</a>
+</div>
+</div>
+</header>
+<div class="run-context">
+<span>
+<b>50</b> cases per system</span>
+<span>
+<b>6</b> companies</span>
+<span>
+<b>16</b> primary documents</span>
+<span>
+<b>100</b> completed calls</span>
+</div>
+<nav class="anchor-nav" aria-label="Page sections">
+<a href="#comparison">01 Comparison</a>
+<a href="#metrics">02 Measured results</a>
+<a href="#findings">03 Failure analysis</a>
+<a href="#sources">04 Sources & exports</a>
+</nav>
+<section class="section" id="comparison">
+<div class="section-heading">
+<h2>
+<span class="section-number">01</span>A shared quality gap</h2>
+<p class="muted">Strict passes require every case-level check</p>
+</div>
+<div class="comparison-cards">$system_cards</div>
+<div class="note">
+<strong>Both systems need better answer quality.</strong> The Copilot passed 0 of 50 strict cases; the baseline passed 2. Both missed all seven expected refusals. Every call returned a nonempty response without a transport error. This local comparison uses <strong>no LLM</strong> and does not establish production readiness.</div>
+</section>
+<section class="section" id="metrics">
+<div class="section-heading">
+<h2>
+<span class="section-number">02</span>Measured results</h2>
+<p class="muted">Same questions, different retrieval approaches</p>
+</div>
+<div class="table comparison-table" role="region" aria-label="System comparison metrics; scroll to compare on narrow screens" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Equity Copilot · local</th>
+<th>Lexical baseline</th>
+</tr>
+</thead>
+<tbody>$metric_rows</tbody>
+</table>
+</div>
+<p class="muted">The API includes loopback HTTP and persistence; the baseline runs in-process. Its 0 ms median is integer rounding of sub-millisecond calls, not zero work. These timings do not establish a service speedup.</p>
+</section>
+<section class="section">
+<div class="findings">
+<div>
+<h2>How to read the scores</h2>
+<p class="muted">Read the limitations alongside the numbers.</p>
+<div class="note">The baseline has better citation-ID matching in this run. A higher composite score does not establish a more accurate financial answer.</div>
+</div>
+<ol class="reading-list">
+<li>A strict pass requires factual coverage, citation thresholds and correct refusal behavior together. Partial, relevant answers can still fail.</li>
+<li>The raw harness reports 86% behavior accuracy for both targets: 43 correct non-refusals out of 50 answered cases. Actual expected-refusal success is <strong>0 of 7</strong>.</li>
+<li>The scorer uses word/number overlap and document identity, not semantic entailment. Seven severe flags per target reflect missing refusal; they are not seven independently verified fabrications.</li>
+<li>Some questions omit the fiscal period that their required-document metadata assumes. Exact-period scoring therefore has a question-design limitation.</li>
+</ol>
+</div>
+</section>
+<section class="section" id="findings">
+<h2>
+<span class="section-number">03</span>What went wrong</h2>
+<p class="muted">Three patterns from the selected-response review.</p>
+<div class="cards">
+<article>
+<h3>Relevant text, incomplete answers</h3>
+<p>The NVIDIA growth answer mentions AI demand but omits the annual growth figure and introduces quarterly data. The annual/quarterly bridge misses the annual citation.</p>
+</article>
+<article>
+<h3>Refusal and relevance</h3>
+<p>For an unavailable price target, both systems return unrelated filing text instead of explicitly stating that the sources cannot answer the question.</p>
+</article>
+<article>
+<h3>The metric has blind spots</h3>
+<p>An AI infrastructure comparison receives lexical credit for risk language that does not provide the requested investment comparison. Keyword overlap can over-credit an answer.</p>
+</article>
+</div>
+<p>
+<a href="review.html">Read the selected-response review and full limitations</a>. This review is AI-assisted; independent human adjudication remains outstanding.</p>
+</section>
+<section class="section" id="sources">
+<h2>
+<span class="section-number">04</span>Sources & execution</h2>
+<p>Six companies, 16 complete primary documents, and 1,311 API chunks. Raw files, normalized source texts and all 40 pinned evidence contexts match the suite hashes. Actual ingestion uses the Copilot’s production HTML/PDF extraction with paragraph boundaries. Both targets receive complete extracted source content; no reference answers, rubric text, or evaluator-selected documents enter the target request.</p>
+<p>The API uses its existing deterministic local provider. The baseline selects the top three 1,200-character chunks by query-token overlap and returns 400 characters per chunk. No LLM was available at the local Ollama endpoint, and no paid provider was used.</p>
+<details class="raw">
+<summary>Capture provenance & original artifact links</summary>
+<div class="provenance">
+<p>
+<strong>Captured:</strong> $captured</p>
+<p>Harness commit<br>
+<code>$harness_commit</code>
+</p>
+<p>Copilot commit<br>
+<code>$copilot_commit</code>
+</p>
+<p>Suite SHA-256<br>
+<code>$suite_hash</code>
+</p>
+<p>
+<a href="config.json">Configuration</a> · <a href="sources.json">Source provenance</a> · <a href="ingestion.json">Ingestion and extraction hashes</a> · <a href="captures.jsonl">100 redacted capture records</a> · <a href="SHA256SUMS.json">Capture checksums</a>
+</p>
+</div>
+</details>
+<div class="note">Public records omit extractive answer text and source excerpts to avoid reproducing substantial filing/transcript prose. Scores are unchanged; original full-response hashes remain available. Public redacted records cannot independently rescore text without the original local or newly reproduced captures. <a href="PUBLIC_EXPORT.json">Export policy</a> · <a href="ORIGINAL_SHA256SUMS.json">Original artifact hashes</a>
+</div>
+</section>
+<section class="section">
+<h2>Inspect & reproduce</h2>
+<div class="comparison-cards">
+<article>
+<h3>Equity Copilot · local</h3>
+<p>
+<a href="copilot-local/report.html">Full scored report</a> · <a href="copilot-local/results.json">Results JSON</a> · <a href="copilot-local/failures.csv">Failures CSV</a>
+</p>
+</article>
+<article>
+<h3>Lexical retrieval baseline</h3>
+<p>
+<a href="lexical-baseline/report.html">Full scored report</a> · <a href="lexical-baseline/results.json">Results JSON</a> · <a href="lexical-baseline/failures.csv">Failures CSV</a>
+</p>
+</article>
+</div>
+<p>
+<a href="../../benchmark/methodology.html">Methodology and reproduction commands</a>. Display rebuilding is offline; a new evaluation requires new target calls and a new output directory.</p>
+</section>
+<footer class="muted">The July captures, legacy suite and historical rescore remain separately preserved. Their metrics are not comparable with this current factual suite. <a href="/historical/2026-07-13/v1/index.html">Original July archive</a> · <a href="/live/report.html">July live-response rescore</a>
+</footer>
+</main>
+</body>
+</html>
