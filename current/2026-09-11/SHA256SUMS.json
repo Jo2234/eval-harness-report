@@ -12,12 +12,12 @@
   "copilot-local/metrics.csv": "e08752472ad4eb398c144ca5223cbaf55e5f484441d03a4c8d15eb5a584d10f8",
   "copilot-local/cases.jsonl": "a1d6e2071daac386065dabb7cab4f83fb3a318000425de8873e07eb773e41ad1",
   "copilot-local/manifest.json": "6c0b6204788e3231799db060c9bd30d0d1630eb90db85f89120573b3f8769ef3",
-  "copilot-local/report.html": "9a53cff54f7c3eb21539368559e4d91bf7f058da30829fb8f4f6c13bb457886b",
+  "copilot-local/report.html": "4eaa4d46ee10a39085fb2563090a80ecc1c3a165b9c7d8112358addb0e3ecb77",
   "lexical-baseline/failures.csv": "109a4d1d5749a93e271d9aa0b0d9d153f80980b7029f5ddd8ab37dd1fec50be1",
   "lexical-baseline/summary.md": "ab2ea680541fa69c75e8e05773c0dd31d26d8e0079be10cb1d845af82ff47788",
   "lexical-baseline/results.json": "4cc037186892aeed2323c6db7c2c6e71bee845eef0b8765471cc30542c0f412b",
   "lexical-baseline/metrics.csv": "7e2b260dcee1d955a0710208e7943c4ad5f187c34733c858fbeb34be8c24710c",
   "lexical-baseline/cases.jsonl": "01c4ab1e5404b2bf6fdca6e701a9f4bad446e571f7d30c0bafe3cc2b71bed80e",
   "lexical-baseline/manifest.json": "a78c83b6cac37ad234e7b68bcdaa355c67d2eb4911f0e33747ef74ea5b74df5d",
-  "lexical-baseline/report.html": "7256ac7149664f9992959661a29931ea1199613c00b0cbc297c5cc6d8d9b6ce0"
+  "lexical-baseline/report.html": "fe4801aedb9553f0bdcb72fe41c2849917785aa95a73b7ba1dde14ed7ea82e09"
 }

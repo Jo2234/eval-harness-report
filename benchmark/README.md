@@ -64,11 +64,11 @@ python benchmark/export_public.py --captured /tmp/financial-eval-run-new \
 
 Keep the original run outside the public repository. The export removes source/answer prose from all targets, including filings and transcripts; it does not replace or alter any measured score.
 
-For an offline display rebuild of the saved public run:
+For an offline display rebuild of the saved public run, install the adjacent harness checkout (including its report renderer). The renderer generates the comparison and both searchable 50-case reports directly from saved JSON; it does not rescore redacted responses. It updates only the two derivative `report.html` checksums in the public inventory. Original hashes, captures, scores and the July archive remain unchanged:
 
 ```sh
 python -m pip install -r benchmark/requirements-render.txt
-python benchmark/render.py
+python benchmark/render.py --harness ../financial-llm-eval-harness
 python -m unittest discover -s tests
 ```
 
