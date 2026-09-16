@@ -1,0 +1,31 @@
+{
+  "initial_candidate": "764ccf1",
+  "summary": {
+    "total_cases": 50,
+    "behavior_evaluated_cases": 50,
+    "behavior_unavailable_cases": 0,
+    "passed_cases": 8,
+    "failed_cases": 42,
+    "overall_score": 0.7001999999999997,
+    "answer_point_recall": 0.34666666666666673,
+    "citation_precision": 0.7966666666666665,
+    "citation_recall": 0.89,
+    "refusal_accuracy": 0.98,
+    "format_score": 0.992,
+    "latency_score": 1.0,
+    "cost_score": 1.0,
+    "severe_hallucination_count": 1,
+    "unsupported_claim_count": 1,
+    "median_latency_ms": 1061.5,
+    "p95_latency_ms": 1794,
+    "total_input_tokens": 357961,
+    "total_output_tokens": 8328,
+    "total_tokens": 366289,
+    "total_estimated_cost_usd": 0.0,
+    "cost_per_case_usd": 0.0,
+    "cost_per_successful_answer_usd": 0.0,
+    "error_rate": 0.0
+  },
+  "results_sha256": "99bc4b607c706b9c07adf074d2b7c09478cb96a7ecf551b4b3054bc35e41e210",
+  "change_after_inspection": "Replaced repeated full-table excerpts with rows and headers, preferred prose for explanatory queries, and prepared passage terms lazily. Final capture is a development iteration, not held-out evidence."
+}

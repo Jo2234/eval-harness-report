@@ -1,0 +1,175 @@
+{
+  "cases_sha256": "094699874cf167d1dbf0c19a18b64a76f348285feb4263f3766f33b9623417da",
+  "passed": 8,
+  "total": 8,
+  "results": [
+    {
+      "id": "annual-quarter-margin",
+      "passed": true,
+      "missing": [],
+      "document_citations": 2,
+      "expected_document_citations": 2,
+      "answer": "BETA 10-k FY2024: Operating margin fell from 24.6% to 22.3% in 2024 because input costs rose. [1] BETA 10-q FY2025 Q2: Operating margin increased from 19.8% to 23.1% in Q2 2025 because freight costs declined. [2]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "5e12617c-abc4-42bf-9a0f-c9b83e913cad",
+          "chunk_id": "c2dfdb20-3dbc-48c9-b31a-654dabc66848",
+          "excerpt": "Operating margin fell from 24.6% to 22.3% in 2024 because input costs rose.",
+          "score": 0.88855,
+          "company_id": "c0598e9c-76dd-47a1-a713-9896c464785f",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        },
+        {
+          "label": "BETA quarter, p. 1",
+          "document_id": "a089a842-2f01-4c00-95e5-56a1f344bc34",
+          "chunk_id": "0d1471cd-858e-46a7-9c7f-2b0885130ecf",
+          "excerpt": "Operating margin increased from 19.8% to 23.1% in Q2 2025 because freight costs declined.",
+          "score": 0.874705,
+          "company_id": "c0598e9c-76dd-47a1-a713-9896c464785f",
+          "title": "quarter",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "table-revenue",
+      "passed": true,
+      "missing": [],
+      "document_citations": 1,
+      "expected_document_citations": 1,
+      "answer": "Revenue in USD millions\n\n| Metric | 2024 | 2023 |\n...\n| Subscription revenue | 438 | 371 | [1]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "8c2844de-2bfa-4656-ac89-2fda61563fcf",
+          "chunk_id": "dd308f7a-f16c-4e1b-89ec-f99ba5545205",
+          "excerpt": "Revenue in USD millions\n\n| Metric | 2024 | 2023 |\n...\n| Subscription revenue | 438 | 371 |",
+          "score": 0.849044,
+          "company_id": "1116d084-bc56-4c40-a605-f585bdf2d64a",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "table-loss",
+      "passed": true,
+      "missing": [],
+      "document_citations": 1,
+      "expected_document_citations": 1,
+      "answer": "Operating income in USD millions\n\n2024 2023\n...\nOperating income (37) 12 [1] Operating income in USD millions\n\n2024 2023\n...\nNet income (52) 9 [1]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "fe72b3de-f6af-4061-86fa-e289ec0aa71f",
+          "chunk_id": "1b602454-6792-4297-91e6-6bc8653eeae1",
+          "excerpt": "Operating income in USD millions\n\n2024 2023\n...\nOperating income (37) 12\nOperating income in USD millions\n\n2024 2023\n...\nNet income (52) 9",
+          "score": 0.868971,
+          "company_id": "662f27a5-34b6-4f34-ab1a-8554231b4b36",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "no-guessed-year",
+      "passed": true,
+      "missing": [],
+      "document_citations": 0,
+      "expected_document_citations": 0,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "wrong-quarter",
+      "passed": true,
+      "missing": [],
+      "document_citations": 0,
+      "expected_document_citations": 0,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "private-target",
+      "passed": true,
+      "missing": [],
+      "document_citations": 0,
+      "expected_document_citations": 0,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "prose-revenue",
+      "passed": true,
+      "missing": [],
+      "document_citations": 1,
+      "expected_document_citations": 1,
+      "answer": "Cloud revenue increased 31% to 682 million euros in 2024 because customers expanded usage. [1]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "3926f105-81ea-4473-8f0c-16451249e896",
+          "chunk_id": "9429162d-feea-4603-9a82-c36cba4adf49",
+          "excerpt": "Cloud revenue increased 31% to 682 million euros in 2024 because customers expanded usage.",
+          "score": 0.875593,
+          "company_id": "864770cc-632c-4b89-b985-d8995754a94a",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "same-text-two-periods",
+      "passed": true,
+      "missing": [],
+      "document_citations": 2,
+      "expected_document_citations": 2,
+      "answer": "BETA 10-k FY2024: Renewal revenue increased 12 percent because more customers renewed contracts. [1] BETA 10-q FY2025 Q2: Renewal revenue increased 12 percent because more customers renewed contracts. [2]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "3f16a024-d5d3-46f1-87eb-3bad7a4f36ae",
+          "chunk_id": "da3727b9-ab04-4f6d-973b-b5e9e9fb90cd",
+          "excerpt": "Renewal revenue increased 12 percent because more customers renewed contracts.",
+          "score": 0.854225,
+          "company_id": "af0e8d1f-598d-40e2-90bb-e10213a7ab99",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        },
+        {
+          "label": "BETA quarter, p. 1",
+          "document_id": "a2926941-7e7a-43b4-88a5-496b473f9022",
+          "chunk_id": "8be75628-162a-4de7-b338-541c7acdec61",
+          "excerpt": "Renewal revenue increased 12 percent because more customers renewed contracts.",
+          "score": 0.854225,
+          "company_id": "af0e8d1f-598d-40e2-90bb-e10213a7ab99",
+          "title": "quarter",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    }
+  ]
+}

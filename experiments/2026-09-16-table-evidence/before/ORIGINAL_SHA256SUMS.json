@@ -1,0 +1,21 @@
+{
+  "sources.json": "13433cd0353e5a1f1efa859b3f6d935e4e3a66f7739b8e9c691463d9f1156316",
+  "config.json": "1f1ccac203948532210ffbfc7c7609ec4ad28a4cda35b28bbc035815f868735a",
+  "captures.jsonl": "f9b18829c39069014cb8a47df298beab86c352bf95e73d01cd85f4d1e7cb98fd",
+  "ingestion.json": "caeedd81b31a22b1a6807be3f57aaf2e3858a1276d01b99446286b8630c0da84",
+  "document-map.json": "ca52039ea28a5622bb1ab7e18a29fa775b65acb432b8b98aa77ec69cbc3afe53",
+  "copilot-local/failures.csv": "90a1e2b0fd95eadba5131ad613b7e5d6e035bda1d5df3d1eac17c3324c89fc4c",
+  "copilot-local/summary.md": "edbac86e43fb821204cb6b600ed46bf40393efa4273207d0681e100991fbf702",
+  "copilot-local/results.json": "314b17350885ff54eb12dee81239f34dafbe741e27f5d8c6e6dd7397865955fd",
+  "copilot-local/metrics.csv": "84e7a9d65bc7ccbda04cc58c4af7a8b0bcf614ca24f230e3c039385101b49923",
+  "copilot-local/cases.jsonl": "90283efa3218e8a8cfdf4735dafb3ecad31eaf58027ccf4e8a7deac5ac97e51d",
+  "copilot-local/manifest.json": "bf895ed71eec4170281b7afea8a2f24b248da2193ababd1c134e50fd4f34a978",
+  "copilot-local/report.html": "0a6ba15dd123ccb63bdbc7df764be78f4de30866b4c477bfb5b7b3d9835e8378",
+  "lexical-baseline/failures.csv": "26250d3cae42b28bfb2adc7baeb82ebb3b056934bcfb0983255645a79babf73f",
+  "lexical-baseline/summary.md": "921a8cfbfb6510f02ecce72439232e44d442bbcdeefab18aa2a2001571fc7014",
+  "lexical-baseline/results.json": "20a7f8b382658a2f6495bb44b7729e7159a8e2becaa13434ae0daee0c27a3469",
+  "lexical-baseline/metrics.csv": "052ed3e53e39b4cc5d7ef782331e8ebbc0d596488066e9620a341a7b49b39dd9",
+  "lexical-baseline/cases.jsonl": "10bbf85884ed51925d1ec2c4235a015475d04c5ef1373066e6a0e37060dd4f0e",
+  "lexical-baseline/manifest.json": "881186d7a7bdf615f2bbad1a8acf6e5a37a1b0b7b0b73fdd6a0465e2c3fd379a",
+  "lexical-baseline/report.html": "9f5056b294532e19c2fd2ea7c7084b0f332e7551ee25b4c575aa7acb6e36fe25"
+}

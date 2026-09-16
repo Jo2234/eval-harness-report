@@ -1,0 +1,154 @@
+{
+  "cases_sha256": "094699874cf167d1dbf0c19a18b64a76f348285feb4263f3766f33b9623417da",
+  "passed": 6,
+  "total": 8,
+  "results": [
+    {
+      "id": "annual-quarter-margin",
+      "passed": true,
+      "missing": [],
+      "document_citations": 2,
+      "expected_document_citations": 2,
+      "answer": "Operating margin fell from 24.6% to 22.3% in 2024 because input costs rose. [1] Operating margin increased from 19.8% to 23.1% in Q2 2025 because freight costs declined. [2]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "d0aaa6fe-9f80-4135-9eb5-59fdef57c4bd",
+          "chunk_id": "ea7c21b5-de65-4d4d-bb68-1926c88121ba",
+          "excerpt": "Operating margin fell from 24.6% to 22.3% in 2024 because input costs rose.",
+          "score": 0.88855,
+          "company_id": "ce74ec0e-4a3b-42f0-b787-6e7548d3a9a1",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        },
+        {
+          "label": "BETA quarter, p. 1",
+          "document_id": "7b584cdb-a11e-4125-b169-a7f7b9b1bc10",
+          "chunk_id": "4aff901e-f48d-4194-81b1-434bcb6030b6",
+          "excerpt": "Operating margin increased from 19.8% to 23.1% in Q2 2025 because freight costs declined.",
+          "score": 0.874705,
+          "company_id": "ce74ec0e-4a3b-42f0-b787-6e7548d3a9a1",
+          "title": "quarter",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "table-revenue",
+      "passed": false,
+      "missing": [
+        "2024",
+        "2023",
+        "438",
+        "371",
+        "USD millions"
+      ],
+      "document_citations": 0,
+      "expected_document_citations": 1,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "table-loss",
+      "passed": true,
+      "missing": [],
+      "document_citations": 1,
+      "expected_document_citations": 1,
+      "answer": "Operating income in USD millions 2024 2023 Operating income (37) 12 Net income (52) 9 [1]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "f070f799-74fa-4f6b-b5c9-19bf970bf708",
+          "chunk_id": "e6844a9b-b59a-43e3-b655-3555929d00d8",
+          "excerpt": "Operating income in USD millions 2024 2023 Operating income (37) 12 Net income (52) 9",
+          "score": 0.868971,
+          "company_id": "c4d1d6a2-6b48-4f68-b49f-ef9e1e1423fc",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "no-guessed-year",
+      "passed": true,
+      "missing": [],
+      "document_citations": 0,
+      "expected_document_citations": 0,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "wrong-quarter",
+      "passed": true,
+      "missing": [],
+      "document_citations": 0,
+      "expected_document_citations": 0,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "private-target",
+      "passed": true,
+      "missing": [],
+      "document_citations": 0,
+      "expected_document_citations": 0,
+      "answer": "I do not have enough cited context to answer that. No retrieved passage directly supports the requested fact and period; upload or select relevant documents.",
+      "citations": []
+    },
+    {
+      "id": "prose-revenue",
+      "passed": true,
+      "missing": [],
+      "document_citations": 1,
+      "expected_document_citations": 1,
+      "answer": "Cloud revenue increased 31% to 682 million euros in 2024 because customers expanded usage. [1]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "f227bd67-1344-49b5-a5e3-f492499e6bac",
+          "chunk_id": "c2a86bc9-5a99-4be0-8b13-cb3a20c6c613",
+          "excerpt": "Cloud revenue increased 31% to 682 million euros in 2024 because customers expanded usage.",
+          "score": 0.875593,
+          "company_id": "d70fb937-7f25-4923-ba2a-38ac0c096564",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    },
+    {
+      "id": "same-text-two-periods",
+      "passed": false,
+      "missing": [],
+      "document_citations": 1,
+      "expected_document_citations": 2,
+      "answer": "Renewal revenue increased 12 percent because more customers renewed contracts. [1]",
+      "citations": [
+        {
+          "label": "BETA annual, p. 1",
+          "document_id": "c586e6ac-ce50-4d6e-8183-8a9b74b95216",
+          "chunk_id": "803c44a3-f79f-42a2-aae2-ad34b47c4219",
+          "excerpt": "Renewal revenue increased 12 percent because more customers renewed contracts.",
+          "score": 0.854225,
+          "company_id": "ecac354e-ef17-4c8f-8979-37596dfcda01",
+          "title": "annual",
+          "company_ticker": "BETA",
+          "page_start": 1,
+          "page_end": 1,
+          "section_title": null
+        }
+      ]
+    }
+  ]
+}

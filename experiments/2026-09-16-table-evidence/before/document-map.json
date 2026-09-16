@@ -1,0 +1,18 @@
+{
+  "3bba3b43-c310-4fde-a550-00a6f843a5d1": "nvda_2025_10k",
+  "ed6581f7-9b81-4660-870c-2ba9f8199385": "nvda_2026_q1_10q",
+  "06582003-6938-4f41-8a83-e64697a814d3": "aapl_2025_10k",
+  "40870b15-ab43-4701-9e42-5ce61e9dc5e2": "aapl_2026_q1_10q",
+  "5529e9d9-f687-4c92-8ed8-65eadb70066c": "msft_2025_10k",
+  "829f4898-bd0b-4753-ac9e-235a270ca016": "msft_2026_q1_10q",
+  "782812bd-f0cd-4c47-b842-018a48b9ef0f": "jpm_2025_10k",
+  "c87555c8-2d35-4fb7-b6cb-a7d34ea6a5e0": "jpm_2026_q1_10q",
+  "5b166add-878f-41f4-98b7-f7d8e84394f0": "xom_2025_10k",
+  "cfe6351a-cab0-434c-a04f-43f591487eaf": "xom_2026_q1_10q",
+  "5d9c8fec-7d55-4cf2-870c-d73d65b7f4d8": "tsla_2025_10k",
+  "4b9c56ac-a12d-48e6-a20f-d19ef3dfd9d7": "tsla_2026_q1_10q",
+  "d732dc64-e347-4d81-bca0-98e6bea0c8fa": "nvda_2026_q1_earnings_call",
+  "0571d80f-7901-4f24-bed3-11838eed653a": "msft_2026_q1_earnings_call",
+  "2ba7f363-9424-4244-9e58-0b367071229b": "jpm_2026_q1_earnings_call",
+  "c0d07e37-531a-4702-aa6a-fb78fbe7ed29": "aapl_2026_q1_earnings_release"
+}

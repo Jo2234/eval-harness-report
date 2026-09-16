@@ -1,0 +1,10 @@
+[
+ {"id":"annual-quarter-margin","annual":"Operating margin fell from 24.6% to 22.3% in 2024 because input costs rose.","quarter":"Operating margin increased from 19.8% to 23.1% in Q2 2025 because freight costs declined.","question":"Compare annual operating margin with Q2 FY2025 operating margin.","required":["24.6%","22.3%","19.8%","23.1%"],"citations":2},
+ {"id":"table-revenue","annual":"Revenue in USD millions\n| Metric | 2024 | 2023 |\n| --- | --- | --- |\n| Subscription revenue | 438 | 371 |\n| Hardware revenue | 91 | 105 |","question":"What was subscription revenue in the annual filing?","required":["2024","2023","438","371","USD millions"],"citations":1},
+ {"id":"table-loss","annual":"Operating income in USD millions\n2024 2023\nOperating income (37) 12\nNet income (52) 9","question":"What operating income was reported in the annual filing?","required":["2024","2023","(37)","12"],"citations":1},
+ {"id":"no-guessed-year","annual":"Subscription revenue 438 371","question":"What was subscription revenue in 2024?","required":[],"citations":0},
+ {"id":"wrong-quarter","annual":"Operating margin was 22.3% because input costs increased.","question":"What operating margin was reported in Q4 FY2025?","required":[],"citations":0},
+ {"id":"private-target","annual":"Gross margin was 27.2% in 2024 and 26.1% in 2023.","question":"What is the internal gross margin target?","required":[],"citations":0},
+ {"id":"prose-revenue","annual":"Cloud revenue increased 31% to 682 million euros in 2024 because customers expanded usage.","question":"What drove cloud revenue growth in fiscal 2024?","required":["31%","682","customers expanded usage"],"citations":1},
+ {"id":"same-text-two-periods","annual":"Renewal revenue increased 12 percent because more customers renewed contracts.","quarter":"Renewal revenue increased 12 percent because more customers renewed contracts.","question":"Compare annual renewal revenue with Q2 FY2025 renewal revenue.","required":["12 percent"],"citations":2}
+]

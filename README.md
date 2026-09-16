@@ -33,3 +33,7 @@ python rescore.py --harness ../financial-llm-eval-harness
 Use `--rescored-at <ISO timestamp>` from an existing `results.json` for a reproducible rebuild. The homepage metrics are rendered from the regenerated JSON via `index.template.html`. The immutable archive is read, never rewritten, by the script.
 
 Run offline archive/rebuild checks with `python -m unittest discover -s tests`.
+
+## Table and period evidence follow-up
+
+[September 16 table-evidence experiment](experiments/2026-09-16-table-evidence/README.md): the annual/quarterly false refusal is fixed and citation precision improves to 81.33%; strict passes remain 8/50. Includes fresh synthetic checks, failure disclosures and measured latency.
