@@ -1,0 +1,227 @@
+{
+  "method": "Five repeats of three fixed questions, alternating target order, same warm local API processes after their 50-case runs. Includes HTTP and growing conversation persistence; no quality rescoring.",
+  "summary": {
+    "before": {
+      "n": 15,
+      "median_ms": 860.727,
+      "max_ms": 905.11
+    },
+    "after": {
+      "n": 15,
+      "median_ms": 875.167,
+      "max_ms": 900.977
+    }
+  },
+  "records": [
+    {
+      "trial": 0,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "before",
+      "latency_ms": 860.727,
+      "response_sha256": "f7947aeb94b5a04c0c94cfc9352b97b7a401e0d5b9d389fdd785d28a2e6ffa81"
+    },
+    {
+      "trial": 0,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "after",
+      "latency_ms": 889.521,
+      "response_sha256": "3a1443173055b9d1f3ea9c97ff89738c6a3a6e901d973a1501a1e216a3325bc1"
+    },
+    {
+      "trial": 0,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "after",
+      "latency_ms": 842.476,
+      "response_sha256": "4ae25cfbdb0d4cb03861399dc47350389d63e514a580eca31e1b519855992598"
+    },
+    {
+      "trial": 0,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "before",
+      "latency_ms": 834.579,
+      "response_sha256": "841b0c22ff8df9d886565bd1d1b563bdc8f8265050f6f2fb06a69a14bb9415d3"
+    },
+    {
+      "trial": 0,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "before",
+      "latency_ms": 869.772,
+      "response_sha256": "c20d08b1c4685999f2fa0205f4b6e81a8c10d14f632686e9c3c978bd05acf00d"
+    },
+    {
+      "trial": 0,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "after",
+      "latency_ms": 867.52,
+      "response_sha256": "1181ecabd3effb162cb1fc0d3814a703344831366fccb2aaa100a02e8eb83e82"
+    },
+    {
+      "trial": 1,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "after",
+      "latency_ms": 875.167,
+      "response_sha256": "c5ee967e2375202d53565f00b459b6c85a94305b04c2411ab6beeeebe6b353a3"
+    },
+    {
+      "trial": 1,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "before",
+      "latency_ms": 854.95,
+      "response_sha256": "f818a635b1441ec60f2c1a74aa1e21f8e07a5ec202cd3ba4e15c940792d8f4a5"
+    },
+    {
+      "trial": 1,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "before",
+      "latency_ms": 835.442,
+      "response_sha256": "ff9bcaf5ede5b72976dceca790cb374600ea03e8af261599132a491283968015"
+    },
+    {
+      "trial": 1,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "after",
+      "latency_ms": 857.483,
+      "response_sha256": "3aef96b4deb6db1dcc0cddbe8008a3e462346d246a0b0f04efca7e75f4e97259"
+    },
+    {
+      "trial": 1,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "after",
+      "latency_ms": 892.13,
+      "response_sha256": "5d9fa31b547865e07d7fdd8293b77063b8af9ab289ba4471bc1b9f12a3ce0331"
+    },
+    {
+      "trial": 1,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "before",
+      "latency_ms": 872.321,
+      "response_sha256": "58bb002a1ce78306a4cef5292d6a41ea2f0605b7e9a807b83f7940579f9bd4f5"
+    },
+    {
+      "trial": 2,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "before",
+      "latency_ms": 859.609,
+      "response_sha256": "7fff48bd64e7dcd023ae64da56f0ba457de2c2213b8f440f66625b7df7a2eb27"
+    },
+    {
+      "trial": 2,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "after",
+      "latency_ms": 871.497,
+      "response_sha256": "a03d7925c91646baea31c44570d1c571b2b23186e49ac1b7c6784597190f03c7"
+    },
+    {
+      "trial": 2,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "after",
+      "latency_ms": 841.899,
+      "response_sha256": "6418d0c36e23eb1e8fdd6e3938a120a0fd936b71eb1684aabea025b723f62144"
+    },
+    {
+      "trial": 2,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "before",
+      "latency_ms": 848.63,
+      "response_sha256": "db1620ac03379c8a28d45b86303adb3e8ab9e6824622e70b49da1b4dd9a61567"
+    },
+    {
+      "trial": 2,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "before",
+      "latency_ms": 884.15,
+      "response_sha256": "0f5374b60c089f2d2399109b3b2d8df6a11b6d27a3e7debcc030858f9498bafa"
+    },
+    {
+      "trial": 2,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "after",
+      "latency_ms": 895.546,
+      "response_sha256": "935f99ac37abd485153835b0a36ed53a6637de2660e8e868e417d67a118659c6"
+    },
+    {
+      "trial": 3,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "after",
+      "latency_ms": 882.541,
+      "response_sha256": "31c4fc2d091411ef9f4730d67a636602b3bf91f35dd24460bedce66191d6feab"
+    },
+    {
+      "trial": 3,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "before",
+      "latency_ms": 862.515,
+      "response_sha256": "73805387ffbc81920edc649f8ed0a052b7898c152c9f0121be02ea6b8c917fbd"
+    },
+    {
+      "trial": 3,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "before",
+      "latency_ms": 843.643,
+      "response_sha256": "03f751a6ca8f70a9c6b51d4a1f97d8567fac91653cb22faa7c55c23073c5b943"
+    },
+    {
+      "trial": 3,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "after",
+      "latency_ms": 852.575,
+      "response_sha256": "813a94cded464631209367bcda36edcafd3ee07649adec85737c3206de84d730"
+    },
+    {
+      "trial": 3,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "after",
+      "latency_ms": 886.404,
+      "response_sha256": "119dcdb88735980c626b6efaf5ebe3ec4c8b39ab44b0e3ffabf966ae7911875a"
+    },
+    {
+      "trial": 3,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "before",
+      "latency_ms": 885.841,
+      "response_sha256": "6328c2fff9c0815aa8b95b175f1e8db51783a46c350d408e4b4af114a67e0d4e"
+    },
+    {
+      "trial": 4,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "before",
+      "latency_ms": 866.373,
+      "response_sha256": "f3a2339ea03ac215968cb7cb93f4c479bec0cb1d14576f8cbc3b623fef3188ba"
+    },
+    {
+      "trial": 4,
+      "question": "What does NVIDIA cite as the primary driver of Data Center revenue growth in fiscal 2025?",
+      "target": "after",
+      "latency_ms": 896.955,
+      "response_sha256": "913048307035f2e17dca934c59aa25cc3c42f243f47f0121fa618c9ebd2088b4"
+    },
+    {
+      "trial": 4,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "after",
+      "latency_ms": 866.338,
+      "response_sha256": "c7f5c36a8343f17c0777b7f391641246b22d3cb298c00ca40acb8b359468747a"
+    },
+    {
+      "trial": 4,
+      "question": "Compare Apple's annual Services growth disclosure with the quarterly Services trend.",
+      "target": "before",
+      "latency_ms": 860.152,
+      "response_sha256": "43b482858bbc8a8d85325a83a9b55097e25388c3b254ace2769b9fe96bda5e88"
+    },
+    {
+      "trial": 4,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "before",
+      "latency_ms": 905.11,
+      "response_sha256": "c06a44936f74bae0e8cf2be4168497734483675339f5a4d7c577da6dc5f8dde9"
+    },
+    {
+      "trial": 4,
+      "question": "What is the exact twelve-month price target for NVIDIA from these filings?",
+      "target": "after",
+      "latency_ms": 900.977,
+      "response_sha256": "6be6eeab981e004012ec1ea64d3d4542de113def551544fc66f4b3ed97e783b7"
+    }
+  ]
+}

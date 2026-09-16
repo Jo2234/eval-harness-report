@@ -1,5 +1,9 @@
 # Financial QA evaluation reports
 
+## Copilot improvement comparison — 16 September 2026
+
+[Read the reproducible before/after comparison](experiments/2026-09-16-copilot-grounding/README.md): the unchanged 50-case suite moves from 0 to 8 strict passes, with citation precision rising from 59.83% to 75.00%. The deterministic candidate still fails 42 cases; scorer limitations, an over-refusal, and timing results are retained alongside the improvements. The original reports below remain unchanged.
+
 ## Fresh comparison — 11 September 2026
 
 [Read the new comparison](current/2026-09-11/index.html) and [methodology/reproduction instructions](benchmark/README.md). Fifty current factual-suite cases were freshly executed against an isolated Equity Copilot API and a simple lexical retrieval baseline using 16 complete, hash-verified source documents. Both targets are deterministic and use **no LLM**.
