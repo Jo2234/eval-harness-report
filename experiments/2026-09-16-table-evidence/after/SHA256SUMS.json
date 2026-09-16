@@ -1,0 +1,8 @@
+{
+  "ORIGINAL_SHA256SUMS.json": "e948353c306a2aa307608f55a4120dd6eb5cc4041512eb2aab39fd98b5ba8d9b",
+  "PUBLIC_EXPORT.json": "e503be5d8bf948533fb94e725a2cf3b24bcc702884913fca02840a4697074bbc",
+  "config.json": "ef32f15ff832f3759f549a866d6b4b1b6b5f3e4effe8279f297bdda5e763f14c",
+  "document-map.json": "6e8d6e604a014dfcb8bebb625c999955f86cc61ec08292368a9c13b31a1d0f48",
+  "ingestion.json": "b0be551e77e0a06d313b8503e1162690f8b1077666dfb0f9632c45126280fa3c",
+  "results.json": "3bb29050a473d565f12e068544caf4a441cafa89445f043050005fbc0a4b0d3d"
+}
