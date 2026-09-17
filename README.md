@@ -1,5 +1,9 @@
 # Financial QA evaluation reports
 
+## PDF and latency follow-up — 17 September 2026
+
+[Read the PDF, selection and cache comparison](experiments/2026-09-17-quality-latency/README.md): measured API median improves 23.95%, Adobe checks rise from 5/8 to 8/8, and the unchanged main suite remains 11/50. Fact and citation coverage improve modestly, citation precision slips to 79.83%, and the absolute quality gate still fails. Includes independent review fixes, frozen Oracle checks, failed development iterations and reproduction instructions.
+
 ## Financial evidence follow-up — 17 September 2026
 
 [Read the numerical evidence comparison](experiments/2026-09-17-financial-evidence/README.md): strict passes improve from 8/50 to 11/50 and factual-point recall on answerable questions from 26.74% to 37.21%. Eight frozen checks on complete Adobe releases improve from 3/8 to 5/8. Citation precision slips slightly, measured latency rises 4.87%, and the absolute quality gate still fails; the report preserves these tradeoffs and reproduction details.

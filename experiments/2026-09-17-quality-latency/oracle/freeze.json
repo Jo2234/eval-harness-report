@@ -1,0 +1,15 @@
+{
+  "frozen_at_utc": "2026-09-17T13:29:15.013461+00:00",
+  "files": {
+    "cases.json": "98035d4846c178bf37ca100f776fd934ad9758e3b8f435f9a254c6e881d733b1",
+    "check.py": "376e59ca5e18e94975e1886c5d74e481055a3967ce1fcaaba1ef2453352a69a9",
+    "sources/sources.json": "3dfb7d4237db0e2dc21c2542d34ce4ee63a58639d99874fd1a2aecca49a706e3"
+  },
+  "baseline": "62c121c",
+  "company": {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation"
+  },
+  "candidate_inspected": false,
+  "method": "Author-created new-source checks frozen before viewing any candidate or baseline answers. Complete official PDFs uploaded through production API; no expected facts or document IDs sent with chat requests. Measures numerical fact presence, units, requested source coverage and explicit refusal; not semantic entailment or independent held-out accuracy."
+}

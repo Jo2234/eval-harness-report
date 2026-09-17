@@ -1,0 +1,227 @@
+{
+  "method": "One warmup then five repeats of three fixed questions, alternating target order. Same corpus/settings, loopback HTTP, growing histories; both APIs have completed the same 50 questions. This is a small local timing check, not a load benchmark.",
+  "summary": {
+    "before": {
+      "n": 15,
+      "median_ms": 973.458,
+      "max_ms": 1013.814
+    },
+    "after": {
+      "n": 15,
+      "median_ms": 740.321,
+      "max_ms": 774.816
+    }
+  },
+  "records": [
+    {
+      "trial": 1,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "after",
+      "latency_ms": 733.637,
+      "answer_sha256": "e33f728f36626a7420949e19c92809e9efa8450300463b7670c2780b692dc692"
+    },
+    {
+      "trial": 1,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "before",
+      "latency_ms": 997.382,
+      "answer_sha256": "f6e01d10d5006c03a6b932237667a309e386ef6909845d4e1ed4ed18ba5d74c9"
+    },
+    {
+      "trial": 1,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "after",
+      "latency_ms": 727.226,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 1,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "before",
+      "latency_ms": 887.991,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 1,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "after",
+      "latency_ms": 732.482,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 1,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "before",
+      "latency_ms": 960.593,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 2,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "before",
+      "latency_ms": 997.646,
+      "answer_sha256": "f6e01d10d5006c03a6b932237667a309e386ef6909845d4e1ed4ed18ba5d74c9"
+    },
+    {
+      "trial": 2,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "after",
+      "latency_ms": 741.731,
+      "answer_sha256": "e33f728f36626a7420949e19c92809e9efa8450300463b7670c2780b692dc692"
+    },
+    {
+      "trial": 2,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "before",
+      "latency_ms": 888.37,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 2,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "after",
+      "latency_ms": 732.694,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 2,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "before",
+      "latency_ms": 964.521,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 2,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "after",
+      "latency_ms": 736.228,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 3,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "after",
+      "latency_ms": 741.348,
+      "answer_sha256": "e33f728f36626a7420949e19c92809e9efa8450300463b7670c2780b692dc692"
+    },
+    {
+      "trial": 3,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "before",
+      "latency_ms": 1004.281,
+      "answer_sha256": "f6e01d10d5006c03a6b932237667a309e386ef6909845d4e1ed4ed18ba5d74c9"
+    },
+    {
+      "trial": 3,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "after",
+      "latency_ms": 774.816,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 3,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "before",
+      "latency_ms": 882.98,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 3,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "after",
+      "latency_ms": 736.959,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 3,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "before",
+      "latency_ms": 973.458,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 4,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "before",
+      "latency_ms": 1002.901,
+      "answer_sha256": "f6e01d10d5006c03a6b932237667a309e386ef6909845d4e1ed4ed18ba5d74c9"
+    },
+    {
+      "trial": 4,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "after",
+      "latency_ms": 747.473,
+      "answer_sha256": "e33f728f36626a7420949e19c92809e9efa8450300463b7670c2780b692dc692"
+    },
+    {
+      "trial": 4,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "before",
+      "latency_ms": 888.081,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 4,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "after",
+      "latency_ms": 740.321,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 4,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "before",
+      "latency_ms": 990.157,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 4,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "after",
+      "latency_ms": 758.558,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 5,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "after",
+      "latency_ms": 764.939,
+      "answer_sha256": "e33f728f36626a7420949e19c92809e9efa8450300463b7670c2780b692dc692"
+    },
+    {
+      "trial": 5,
+      "case_id": "nvda_10k_datacenter_revenue_001",
+      "target": "before",
+      "latency_ms": 1013.814,
+      "answer_sha256": "f6e01d10d5006c03a6b932237667a309e386ef6909845d4e1ed4ed18ba5d74c9"
+    },
+    {
+      "trial": 5,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "after",
+      "latency_ms": 738.906,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 5,
+      "case_id": "aapl_10k_10q_services_bridge_027",
+      "target": "before",
+      "latency_ms": 890.375,
+      "answer_sha256": "71f575ca5853115b272544a171847ef53473e5a0fd8b1bdd7a6798e071a2bf17"
+    },
+    {
+      "trial": 5,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "after",
+      "latency_ms": 748.336,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    },
+    {
+      "trial": 5,
+      "case_id": "tsla_10k_10q_margin_bridge_031",
+      "target": "before",
+      "latency_ms": 979.892,
+      "answer_sha256": "dc1a1376ea140531054050e64b110bc1aad5086cd924b1b90c341f2b1048aea8"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "method": "Frozen source-backed numerical fact-presence, exact source-document coverage and explicit-refusal checks; not semantic entailment or independent held-out accuracy. No reference facts or document IDs enter chat requests.",
+  "cases_sha256": "c6420c62b681f9a7ec4593c8c060665620f2d02ede65739ff5f818c4d6eeca91",
+  "sources": [
+    {
+      "id": "adobe_fy2024",
+      "url": "https://www.adobe.com/content/dam/cc/en/investor-relations/pdfs/11214202/a56sthg53egr.pdf",
+      "fiscal_year": 2024,
+      "document_type": "8-k",
+      "title": "Adobe Q4 and FY2024 earnings release",
+      "sha256": "56985a60c29f24a6f5e4169fed221a5dca357b11d1e1f9ae528022f02b425661",
+      "pages": 9
+    },
+    {
+      "id": "adobe_q1fy2025",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/21305202/a4t3greafe.pdf",
+      "fiscal_year": 2025,
+      "fiscal_quarter": 1,
+      "document_type": "8-k",
+      "title": "Adobe Q1 FY2025 earnings release",
+      "sha256": "4281ca74fbb144f80307b90cbc4b4280edf9b631901b760e98080111d9f468c5",
+      "pages": 9
+    }
+  ],
+  "passed": 5,
+  "total": 8,
+  "results": [
+    {
+      "id": "quarter_revenue_growth",
+      "passed": false,
+      "missing_patterns": [
+        "5\\.71\\s*billion"
+      ],
+      "documents": [
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 29.288,
+      "answer_sha256": "8764622ac3beb62bdd5965f6a5fbf1276974230dfe98606b35e9b09438a3ae07",
+      "citation_count": 1
+    },
+    {
+      "id": "quarter_eps",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 35.278,
+      "answer_sha256": "16b7b78ed9f8b78371cc9669eb0749a4cff958cc5782367e792300d69d46a6d7",
+      "citation_count": 2
+    },
+    {
+      "id": "quarter_cash_and_buybacks",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 36.074,
+      "answer_sha256": "5bcf0d33dbdf7e0080d628a81fa908910832a0aa7154acac09253a8d6cad95ad",
+      "citation_count": 2
+    },
+    {
+      "id": "year_revenue_growth",
+      "passed": false,
+      "missing_patterns": [
+        "21\\.51\\s*billion"
+      ],
+      "documents": [
+        "adobe_fy2024"
+      ],
+      "expected_documents": [
+        "adobe_fy2024"
+      ],
+      "latency_ms": 26.468,
+      "answer_sha256": "e084d5b9f9a84186f2d1205fda1fb7e65faeb623033d5ba056c836859e25b76b",
+      "citation_count": 1
+    },
+    {
+      "id": "media_comparison",
+      "passed": false,
+      "missing_patterns": [
+        "15\\.86\\s*billion"
+      ],
+      "documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 41.418,
+      "answer_sha256": "9cad3cb8014fb7ac31f50d455d958e63ab22dbb254534e88f2eff54e7fdfbc57",
+      "citation_count": 2
+    },
+    {
+      "id": "cash_comparison",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 55.515,
+      "answer_sha256": "b66dc1620bd29969e8e35822890c2f77cc010724b8b88a7c3b0f6d0e33795f05",
+      "citation_count": 3
+    },
+    {
+      "id": "missing_period",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 14.679,
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "citation_count": 0
+    },
+    {
+      "id": "private_target",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 53.023,
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "citation_count": 0
+    }
+  ],
+  "public_export": "Answer prose and citation excerpts omitted; checks unchanged."
+}
