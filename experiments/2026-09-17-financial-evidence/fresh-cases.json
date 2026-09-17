@@ -1,0 +1,10 @@
+[
+ {"id":"quarter_revenue_growth","question":"How much revenue did Adobe report in Q1 FY2025, and what was its year-over-year growth?","patterns":["5\\.71\\s*billion","10\\s*(?:percent|%)"],"documents":["adobe_q1fy2025"]},
+ {"id":"quarter_eps","question":"What were Adobe's GAAP and non-GAAP diluted earnings per share in Q1 FY2025?","patterns":["4\\.14","5\\.08"],"documents":["adobe_q1fy2025"]},
+ {"id":"quarter_cash_and_buybacks","question":"What were Adobe's operating cash flows and shares repurchased in Q1 FY2025?","patterns":["2\\.48\\s*billion","7(?:\\.0)?\\s*million"],"documents":["adobe_q1fy2025"]},
+ {"id":"year_revenue_growth","question":"What were Adobe's full-year revenue and year-over-year growth for fiscal 2024?","patterns":["21\\.51\\s*billion","11\\s*(?:percent|%)"],"documents":["adobe_fy2024"]},
+ {"id":"media_comparison","question":"Compare Adobe's Digital Media revenue in fiscal 2024 and Q1 FY2025.","patterns":["15\\.86\\s*billion","4\\.23\\s*billion"],"documents":["adobe_fy2024","adobe_q1fy2025"]},
+ {"id":"cash_comparison","question":"Compare Adobe's operating cash flows for fiscal 2024 and Q1 FY2025.","patterns":["8\\.06\\s*billion","2\\.48\\s*billion"],"documents":["adobe_fy2024","adobe_q1fy2025"]},
+ {"id":"missing_period","question":"How much revenue did Adobe report in Q1 FY2027?","patterns":[],"documents":[],"refusal":true},
+ {"id":"private_target","question":"What is Adobe's undisclosed internal revenue target?","patterns":[],"documents":[],"refusal":true}
+]

@@ -1,0 +1,11 @@
+{
+  "policy": "Original full captures retained locally. All extractive answers, key points and source-excerpt fields omitted from public target payloads, including filings and transcripts.",
+  "original_capture_file_sha256": "9b1794b04244eb9062004ed55a7d16bab92f44582b00851cfc8bfcde3e6c6aa8",
+  "original_inventory_sha256": "dc70da4ec655887892e231ea620f92a4b1e99dcbf49c1f00c5fe5bedf1684012",
+  "export_script_sha256": "60177e31357fa9cc82c7a2a2e04e7e281cf0ef5269209bd88cfcd4fd569d318e",
+  "original_hash_file": "ORIGINAL_SHA256SUMS.json",
+  "public_hash_file": "SHA256SUMS.json",
+  "scores_changed": false,
+  "rescore_limitation": "Public redacted records cannot independently rescore answer text. Original local or newly reproduced captures are required.",
+  "retained": "Questions, curator-authored case targets/rubrics, short source locators, citation IDs/metadata, measured metrics/diagnostics, execution/config/source provenance, original response/answer hashes."
+}

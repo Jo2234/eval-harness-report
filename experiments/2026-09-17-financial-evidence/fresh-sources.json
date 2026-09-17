@@ -1,0 +1,21 @@
+[
+  {
+    "id": "adobe_fy2024",
+    "url": "https://www.adobe.com/content/dam/cc/en/investor-relations/pdfs/11214202/a56sthg53egr.pdf",
+    "fiscal_year": 2024,
+    "document_type": "8-k",
+    "title": "Adobe Q4 and FY2024 earnings release",
+    "sha256": "56985a60c29f24a6f5e4169fed221a5dca357b11d1e1f9ae528022f02b425661",
+    "pages": 9
+  },
+  {
+    "id": "adobe_q1fy2025",
+    "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/21305202/a4t3greafe.pdf",
+    "fiscal_year": 2025,
+    "fiscal_quarter": 1,
+    "document_type": "8-k",
+    "title": "Adobe Q1 FY2025 earnings release",
+    "sha256": "4281ca74fbb144f80307b90cbc4b4280edf9b631901b760e98080111d9f468c5",
+    "pages": 9
+  }
+]

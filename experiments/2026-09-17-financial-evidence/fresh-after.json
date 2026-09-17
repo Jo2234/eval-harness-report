@@ -1,0 +1,312 @@
+{
+  "method": "Frozen source-backed numerical fact-presence, exact source-document coverage and explicit-refusal checks; not semantic entailment or independent held-out accuracy. No reference facts or document IDs enter chat requests.",
+  "cases_sha256": "c6420c62b681f9a7ec4593c8c060665620f2d02ede65739ff5f818c4d6eeca91",
+  "sources": [
+    {
+      "id": "adobe_fy2024",
+      "url": "https://www.adobe.com/content/dam/cc/en/investor-relations/pdfs/11214202/a56sthg53egr.pdf",
+      "fiscal_year": 2024,
+      "document_type": "8-k",
+      "title": "Adobe Q4 and FY2024 earnings release",
+      "sha256": "56985a60c29f24a6f5e4169fed221a5dca357b11d1e1f9ae528022f02b425661",
+      "pages": 9
+    },
+    {
+      "id": "adobe_q1fy2025",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/21305202/a4t3greafe.pdf",
+      "fiscal_year": 2025,
+      "fiscal_quarter": 1,
+      "document_type": "8-k",
+      "title": "Adobe Q1 FY2025 earnings release",
+      "sha256": "4281ca74fbb144f80307b90cbc4b4280edf9b631901b760e98080111d9f468c5",
+      "pages": 9
+    }
+  ],
+  "passed": 5,
+  "total": 8,
+  "results": [
+    {
+      "id": "quarter_revenue_growth",
+      "passed": false,
+      "missing_patterns": [
+        "5\\.71\\s*billion"
+      ],
+      "documents": [
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 29.288,
+      "citations": [
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 1-2",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "3fb0d4a7-c634-4227-b2d1-53534797ef3e",
+          "score": 0.517224,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "answer_sha256": "8764622ac3beb62bdd5965f6a5fbf1276974230dfe98606b35e9b09438a3ae07"
+    },
+    {
+      "id": "quarter_eps",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 35.278,
+      "citations": [
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 1-2",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "3fb0d4a7-c634-4227-b2d1-53534797ef3e",
+          "score": 0.852221,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        },
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 4-7",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "f4440001-6db2-4d6a-abf7-b2272d81fa9c",
+          "score": 0.526594,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 4,
+          "page_end": 7,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "answer_sha256": "16b7b78ed9f8b78371cc9669eb0749a4cff958cc5782367e792300d69d46a6d7"
+    },
+    {
+      "id": "quarter_cash_and_buybacks",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 36.074,
+      "citations": [
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 1-2",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "3fb0d4a7-c634-4227-b2d1-53534797ef3e",
+          "score": 0.538103,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        },
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 4-7",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "f4440001-6db2-4d6a-abf7-b2272d81fa9c",
+          "score": 0.491367,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 4,
+          "page_end": 7,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "answer_sha256": "5bcf0d33dbdf7e0080d628a81fa908910832a0aa7154acac09253a8d6cad95ad"
+    },
+    {
+      "id": "year_revenue_growth",
+      "passed": false,
+      "missing_patterns": [
+        "21\\.51\\s*billion"
+      ],
+      "documents": [
+        "adobe_fy2024"
+      ],
+      "expected_documents": [
+        "adobe_fy2024"
+      ],
+      "latency_ms": 26.468,
+      "citations": [
+        {
+          "label": "ADBE Adobe Q4 and FY2024 earnings release, pp. 1-2",
+          "document_id": "ae5ec86c-0c4e-47a2-8b65-d738371f5665",
+          "chunk_id": "f0d00afe-854b-405f-b8e7-3307c579bf2a",
+          "score": 0.508896,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q4 and FY2024 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "answer_sha256": "e084d5b9f9a84186f2d1205fda1fb7e65faeb623033d5ba056c836859e25b76b"
+    },
+    {
+      "id": "media_comparison",
+      "passed": false,
+      "missing_patterns": [
+        "15\\.86\\s*billion"
+      ],
+      "documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 41.418,
+      "citations": [
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 1-2",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "3fb0d4a7-c634-4227-b2d1-53534797ef3e",
+          "score": 0.825534,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        },
+        {
+          "label": "ADBE Adobe Q4 and FY2024 earnings release, pp. 1-2",
+          "document_id": "ae5ec86c-0c4e-47a2-8b65-d738371f5665",
+          "chunk_id": "f0d00afe-854b-405f-b8e7-3307c579bf2a",
+          "score": 0.822433,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q4 and FY2024 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "answer_sha256": "9cad3cb8014fb7ac31f50d455d958e63ab22dbb254534e88f2eff54e7fdfbc57"
+    },
+    {
+      "id": "cash_comparison",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "expected_documents": [
+        "adobe_fy2024",
+        "adobe_q1fy2025"
+      ],
+      "latency_ms": 55.515,
+      "citations": [
+        {
+          "label": "ADBE Adobe Q4 and FY2024 earnings release, pp. 1-2",
+          "document_id": "ae5ec86c-0c4e-47a2-8b65-d738371f5665",
+          "chunk_id": "f0d00afe-854b-405f-b8e7-3307c579bf2a",
+          "score": 0.82416,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q4 and FY2024 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        },
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 1-2",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "3fb0d4a7-c634-4227-b2d1-53534797ef3e",
+          "score": 0.810917,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 1,
+          "page_end": 2,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        },
+        {
+          "label": "ADBE Adobe Q1 FY2025 earnings release, pp. 4-7",
+          "document_id": "8c2cb428-1eec-487a-937e-79de806a2555",
+          "chunk_id": "f4440001-6db2-4d6a-abf7-b2272d81fa9c",
+          "score": 0.839203,
+          "company_id": "e0384d3b-735d-4fbf-9567-e483d9f4508c",
+          "title": "Adobe Q1 FY2025 earnings release",
+          "company_ticker": "ADBE",
+          "page_start": 4,
+          "page_end": 7,
+          "section_title": "FOR IMMEDIATE RELEASE"
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "answer_sha256": "b66dc1620bd29969e8e35822890c2f77cc010724b8b88a7c3b0f6d0e33795f05"
+    },
+    {
+      "id": "missing_period",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 14.679,
+      "citations": [],
+      "limitations": [
+        "A relevance check is not semantic entailment. Missing support is not proof that the information does not exist."
+      ],
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c"
+    },
+    {
+      "id": "private_target",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 53.023,
+      "citations": [],
+      "limitations": [
+        "A relevance check is not semantic entailment. Missing support is not proof that the information does not exist."
+      ],
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c"
+    }
+  ],
+  "public_export": "Answer text and source excerpts omitted; metrics unchanged. Full local captures are required for text rescoring."
+}

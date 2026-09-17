@@ -1,5 +1,9 @@
 # Financial QA evaluation reports
 
+## Financial evidence follow-up — 17 September 2026
+
+[Read the numerical evidence comparison](experiments/2026-09-17-financial-evidence/README.md): strict passes improve from 8/50 to 11/50 and factual-point recall on answerable questions from 26.74% to 37.21%. Eight frozen checks on complete Adobe releases improve from 3/8 to 5/8. Citation precision slips slightly, measured latency rises 4.87%, and the absolute quality gate still fails; the report preserves these tradeoffs and reproduction details.
+
 ## Copilot improvement comparison — 16 September 2026
 
 [Read the reproducible before/after comparison](experiments/2026-09-16-copilot-grounding/README.md): the unchanged 50-case suite moves from 0 to 8 strict passes, with citation precision rising from 59.83% to 75.00%. The deterministic candidate still fails 42 cases; scorer limitations, an over-refusal, and timing results are retained alongside the improvements. The original reports below remain unchanged.
