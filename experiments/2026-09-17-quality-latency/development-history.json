@@ -1,0 +1,214 @@
+{
+  "baseline": {
+    "summary": {
+      "total_cases": 50,
+      "behavior_evaluated_cases": 50,
+      "behavior_unavailable_cases": 0,
+      "passed_cases": 11,
+      "failed_cases": 39,
+      "overall_score": 0.7453666666666662,
+      "answer_point_recall": 0.46,
+      "citation_precision": 0.8066666666666665,
+      "citation_recall": 0.91,
+      "refusal_accuracy": 0.98,
+      "format_score": 0.992,
+      "latency_score": 1.0,
+      "cost_score": 1.0,
+      "severe_hallucination_count": 1,
+      "unsupported_claim_count": 1,
+      "median_latency_ms": 1010.5,
+      "p95_latency_ms": 1735,
+      "total_input_tokens": 361672,
+      "total_output_tokens": 8048,
+      "total_tokens": 369720,
+      "total_estimated_cost_usd": 0.0,
+      "cost_per_case_usd": 0.0,
+      "cost_per_successful_answer_usd": 0.0,
+      "error_rate": 0.0
+    },
+    "gate": {
+      "passed": false,
+      "thresholds": {
+        "overall_score": 0.8,
+        "answer_point_recall": 0.8,
+        "citation_precision": 0.8,
+        "citation_recall": 0.75,
+        "refusal_accuracy": 0.9,
+        "error_rate": 0.05,
+        "max_severe_hallucination_count": 0,
+        "max_median_latency_ms": 8000
+      },
+      "violations": [
+        {
+          "metric": "overall_score",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.7453666666666662
+        },
+        {
+          "metric": "answer_point_recall",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.46
+        },
+        {
+          "metric": "severe_hallucination_count",
+          "operator": "<=",
+          "threshold": 0,
+          "actual": 1
+        }
+      ]
+    },
+    "capture_sha256": "155b90a1fdb7e50e0a3fb71220551ce44ababfda96d6a1d62f3b64ce9f2bbc2b"
+  },
+  "first_candidate": {
+    "summary": {
+      "total_cases": 50,
+      "behavior_evaluated_cases": 50,
+      "behavior_unavailable_cases": 0,
+      "passed_cases": 11,
+      "failed_cases": 39,
+      "overall_score": 0.7453999999999996,
+      "answer_point_recall": 0.4833333333333333,
+      "citation_precision": 0.7833333333333333,
+      "citation_recall": 0.92,
+      "refusal_accuracy": 0.96,
+      "format_score": 0.9840000000000001,
+      "latency_score": 1.0,
+      "cost_score": 1.0,
+      "severe_hallucination_count": 1,
+      "unsupported_claim_count": 2,
+      "median_latency_ms": 795.0,
+      "p95_latency_ms": 1394,
+      "total_input_tokens": 360623,
+      "total_output_tokens": 7400,
+      "total_tokens": 368023,
+      "total_estimated_cost_usd": 0.0,
+      "cost_per_case_usd": 0.0,
+      "cost_per_successful_answer_usd": 0.0,
+      "error_rate": 0.0
+    },
+    "gate": {
+      "passed": false,
+      "thresholds": {
+        "overall_score": 0.8,
+        "answer_point_recall": 0.8,
+        "citation_precision": 0.8,
+        "citation_recall": 0.75,
+        "refusal_accuracy": 0.9,
+        "error_rate": 0.05,
+        "max_severe_hallucination_count": 0,
+        "max_median_latency_ms": 8000
+      },
+      "violations": [
+        {
+          "metric": "overall_score",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.7453999999999996
+        },
+        {
+          "metric": "answer_point_recall",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.4833333333333333
+        },
+        {
+          "metric": "citation_precision",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.7833333333333333
+        },
+        {
+          "metric": "severe_hallucination_count",
+          "operator": "<=",
+          "threshold": 0,
+          "actual": 1
+        }
+      ]
+    },
+    "capture_sha256": "27c5a21d1427fd1958714cc495a80f97553878a0cc3a40d84e0f572241bc3da1"
+  },
+  "oracle_first_candidate": {
+    "passed": 3,
+    "total": 8,
+    "reason": "PDF blocks split wrapped lines; newly frozen Oracle cases then informed debugging."
+  },
+  "oracle_continuation_fix": {
+    "passed": 4,
+    "total": 8,
+    "reason": "Annual passage still inherited preceding quarter heading; fixed explicit passage period override."
+  },
+  "oracle_final": {
+    "passed": 5,
+    "total": 8
+  },
+  "final": {
+    "summary": {
+      "total_cases": 50,
+      "behavior_evaluated_cases": 50,
+      "behavior_unavailable_cases": 0,
+      "passed_cases": 11,
+      "failed_cases": 39,
+      "overall_score": 0.7524499999999996,
+      "answer_point_recall": 0.4733333333333333,
+      "citation_precision": 0.7983333333333335,
+      "citation_recall": 0.94,
+      "refusal_accuracy": 0.98,
+      "format_score": 0.992,
+      "latency_score": 1.0,
+      "cost_score": 1.0,
+      "severe_hallucination_count": 1,
+      "unsupported_claim_count": 1,
+      "median_latency_ms": 786.5,
+      "p95_latency_ms": 1400,
+      "total_input_tokens": 365258,
+      "total_output_tokens": 7932,
+      "total_tokens": 373190,
+      "total_estimated_cost_usd": 0.0,
+      "cost_per_case_usd": 0.0,
+      "cost_per_successful_answer_usd": 0.0,
+      "error_rate": 0.0
+    },
+    "gate": {
+      "passed": false,
+      "thresholds": {
+        "overall_score": 0.8,
+        "answer_point_recall": 0.8,
+        "citation_precision": 0.8,
+        "citation_recall": 0.75,
+        "refusal_accuracy": 0.9,
+        "error_rate": 0.05,
+        "max_severe_hallucination_count": 0,
+        "max_median_latency_ms": 8000
+      },
+      "violations": [
+        {
+          "metric": "overall_score",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.7524499999999996
+        },
+        {
+          "metric": "answer_point_recall",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.4733333333333333
+        },
+        {
+          "metric": "citation_precision",
+          "operator": ">=",
+          "threshold": 0.8,
+          "actual": 0.7983333333333335
+        },
+        {
+          "metric": "severe_hallucination_count",
+          "operator": "<=",
+          "threshold": 0,
+          "actual": 1
+        }
+      ]
+    },
+    "capture_sha256": "31fc4b324bd29897f9a6c7aa3d6215151543f26f535790111be7e4e7111bfe38"
+  }
+}

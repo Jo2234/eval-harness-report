@@ -1,0 +1,21 @@
+[
+  {
+    "id": "oracle_fy2025",
+    "url": "https://s23.q4cdn.com/440135859/files/doc_financials/2025/q4/4q25-pressrelease-June-final.pdf",
+    "fiscal_year": 2025,
+    "document_type": "8-k",
+    "title": "Oracle Q4 and FY2025 earnings release",
+    "sha256": "5856c9eca4939fbce12400bdbd8da5e5d9e734467ccd7e696a61d3578049862c",
+    "pages": 12
+  },
+  {
+    "id": "oracle_q1fy2027",
+    "url": "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+    "fiscal_year": 2027,
+    "fiscal_quarter": 1,
+    "document_type": "8-k",
+    "title": "Oracle Q1 FY2027 earnings release",
+    "sha256": "49cd67ba5ab0f0fd74da84d3fbe9c897d5bb8fbfcda5eb24934beeea8e203090",
+    "pages": 11
+  }
+]

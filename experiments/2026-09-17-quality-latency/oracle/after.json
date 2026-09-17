@@ -1,0 +1,164 @@
+{
+  "copilot_commit": "d25da954e316736bb4615e613c13cf54c493153e",
+  "company": {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation"
+  },
+  "runner_sha256": "376e59ca5e18e94975e1886c5d74e481055a3967ce1fcaaba1ef2453352a69a9",
+  "method": "Frozen source-backed numerical fact-presence, exact source-document coverage and explicit-refusal checks; not semantic entailment or independent held-out accuracy. No reference facts or document IDs enter chat requests.",
+  "cases_sha256": "98035d4846c178bf37ca100f776fd934ad9758e3b8f435f9a254c6e881d733b1",
+  "sources": [
+    {
+      "id": "oracle_fy2025",
+      "url": "https://s23.q4cdn.com/440135859/files/doc_financials/2025/q4/4q25-pressrelease-June-final.pdf",
+      "fiscal_year": 2025,
+      "document_type": "8-k",
+      "title": "Oracle Q4 and FY2025 earnings release",
+      "sha256": "5856c9eca4939fbce12400bdbd8da5e5d9e734467ccd7e696a61d3578049862c",
+      "pages": 12
+    },
+    {
+      "id": "oracle_q1fy2027",
+      "url": "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "fiscal_year": 2027,
+      "fiscal_quarter": 1,
+      "document_type": "8-k",
+      "title": "Oracle Q1 FY2027 earnings release",
+      "sha256": "49cd67ba5ab0f0fd74da84d3fbe9c897d5bb8fbfcda5eb24934beeea8e203090",
+      "pages": 11
+    }
+  ],
+  "passed": 5,
+  "total": 8,
+  "results": [
+    {
+      "id": "q1_revenue_growth",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 51.414,
+      "confidence": "medium",
+      "answer_sha256": "957d4bedaf0c97c56acf9d619ec9a31ede877cdf85f019947e3643e6c1176de1",
+      "citation_count": 2,
+      "key_point_count": 4
+    },
+    {
+      "id": "q1_eps",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 33.793,
+      "confidence": "medium",
+      "answer_sha256": "c4387c1c20d8a862e6f3b465b1a2a9e7db5811da1612af4162e5f8e90f5296be",
+      "citation_count": 2,
+      "key_point_count": 4
+    },
+    {
+      "id": "q4_revenue_growth",
+      "passed": false,
+      "missing_patterns": [
+        "15\\.9\\s*(?:billion|bn|b\\b)",
+        "11\\s*(?:percent|%)"
+      ],
+      "documents": [],
+      "expected_documents": [
+        "oracle_fy2025"
+      ],
+      "latency_ms": 12.782,
+      "confidence": "low",
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "citation_count": 0,
+      "key_point_count": 0
+    },
+    {
+      "id": "annual_operating_cash",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_fy2025"
+      ],
+      "expected_documents": [
+        "oracle_fy2025"
+      ],
+      "latency_ms": 41.123,
+      "confidence": "medium",
+      "answer_sha256": "bcf6969fe15f4e4fa32cac63aacb33c326926c1d6aa34575310e57f175ea5702",
+      "citation_count": 2,
+      "key_point_count": 4
+    },
+    {
+      "id": "cloud_revenue_comparison",
+      "passed": false,
+      "missing_patterns": [
+        "6\\.7\\s*(?:billion|bn|b\\b)"
+      ],
+      "documents": [
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_fy2025",
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 30.471,
+      "confidence": "medium",
+      "answer_sha256": "80437187d1e706d63b865808618aca7125adda777020e6c79e82e80631afc644",
+      "citation_count": 1,
+      "key_point_count": 4
+    },
+    {
+      "id": "total_revenue_comparison",
+      "passed": false,
+      "missing_patterns": [
+        "15\\.9\\s*(?:billion|bn|b\\b)"
+      ],
+      "documents": [
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_fy2025",
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 29.701,
+      "confidence": "medium",
+      "answer_sha256": "39c634a9c4b43ac00a26251c7bcc86ac23f78a8762c967d2ad5dc9a749d30ce7",
+      "citation_count": 1,
+      "key_point_count": 4
+    },
+    {
+      "id": "missing_period",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 15.677,
+      "confidence": "low",
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "citation_count": 0,
+      "key_point_count": 0
+    },
+    {
+      "id": "undisclosed_target",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 31.124,
+      "confidence": "low",
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "citation_count": 0,
+      "key_point_count": 0
+    }
+  ],
+  "capture_sha256": "f5708a7d289d7b90003560834a87d55fd58e2f3b3888874ac774cea5fda37bd6",
+  "export_policy": "Extractive answers, key-point prose, citation snippets and limitations removed; source URLs/hashes, metrics and source-coverage checks retained. Original immutable capture remains local."
+}

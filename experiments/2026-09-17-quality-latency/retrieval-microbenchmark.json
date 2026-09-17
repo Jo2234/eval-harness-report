@@ -1,0 +1,26 @@
+{
+  "query": "What drove cloud revenue growth in fiscal 2025?",
+  "corpus_chunks": 1311,
+  "cold_ms": [
+    152.70929201506078,
+    148.8774160388857,
+    148.357417085208,
+    149.01454106438905,
+    154.76333408150822,
+    149.97533394489437,
+    150.1268339343369
+  ],
+  "warm_ms": [
+    1.1810000287368894,
+    1.032667001709342,
+    1.1759999906644225,
+    1.0671669151633978,
+    1.1084999423474073,
+    1.0133750038221478,
+    1.1345420498400927
+  ],
+  "cold_median_ms": 149.97533394489437,
+  "warm_median_ms": 1.1084999423474073,
+  "all_results_identical": true,
+  "scope": "single Microsoft query; seven alternating pairs; retrieval only, not chat persistence or API latency"
+}

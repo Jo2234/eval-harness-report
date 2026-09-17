@@ -1,0 +1,10 @@
+[
+  {"id":"q1_revenue_growth","question":"How much total revenue did Oracle report in Q1 FY2027, and what was its year-over-year growth in USD?","patterns":["19\\.3\\s*(?:billion|bn|b\\b)","30\\s*(?:percent|%)"],"documents":["oracle_q1fy2027"],"source_pages":[1]},
+  {"id":"q1_eps","question":"What were Oracle's GAAP and non-GAAP earnings per share in Q1 FY2027?","patterns":["(?<![\\d.])1\\.56(?!\\d)","(?<![\\d.])1\\.92(?!\\d)","earnings per share|EPS|per.share"],"documents":["oracle_q1fy2027"],"source_pages":[1]},
+  {"id":"q4_revenue_growth","question":"How much total revenue did Oracle report in Q4 FY2025, and what was its year-over-year growth?","patterns":["15\\.9\\s*(?:billion|bn|b\\b)","11\\s*(?:percent|%)"],"documents":["oracle_fy2025"],"source_pages":[1]},
+  {"id":"annual_operating_cash","question":"What were Oracle's operating cash flow and its growth for the full fiscal year 2025?","patterns":["20\\.8\\s*(?:billion|bn|b\\b)","12\\s*(?:percent|%)","(?:fiscal(?: year)?\\s*2025|FY\\s*2025|FY25)"],"documents":["oracle_fy2025"],"source_pages":[1]},
+  {"id":"cloud_revenue_comparison","question":"Compare Oracle's total cloud revenue in Q4 FY2025 and Q1 FY2027.","patterns":["6\\.7\\s*(?:billion|bn|b\\b)","11\\.6\\s*(?:billion|bn|b\\b)"],"documents":["oracle_fy2025","oracle_q1fy2027"],"source_pages":[1]},
+  {"id":"total_revenue_comparison","question":"Compare Oracle's total quarterly revenue in Q4 FY2025 and Q1 FY2027.","patterns":["15\\.9\\s*(?:billion|bn|b\\b)","19\\.3\\s*(?:billion|bn|b\\b)"],"documents":["oracle_fy2025","oracle_q1fy2027"],"source_pages":[1]},
+  {"id":"missing_period","question":"How much total revenue did Oracle report in Q1 FY2030?","patterns":[],"documents":[],"refusal":true},
+  {"id":"undisclosed_target","question":"What is Oracle's undisclosed internal revenue target?","patterns":[],"documents":[],"refusal":true}
+]
