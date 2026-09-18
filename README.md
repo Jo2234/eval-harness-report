@@ -1,5 +1,9 @@
 # Financial QA evaluation reports
 
+## Source-preserving evidence — 18 September 2026
+
+[Read the unchanged-suite comparison](experiments/2026-09-18-source-preserving-evidence/README.md): strict passes rise from **11/50 to 34/50**, with no lost passes; fresh Adobe and Oracle checks both pass 8/8. The absolute gate still fails at 78% factual-point recall, 16 cases remain incomplete, and observed median latency rises from 786.5 ms to 1,754 ms. Source/scorer hashes, redacted captures, limitations and reproduction commands are retained.
+
 ## PDF and latency follow-up — 17 September 2026
 
 [Read the PDF, selection and cache comparison](experiments/2026-09-17-quality-latency/README.md): measured API median improves 23.95%, Adobe checks rise from 5/8 to 8/8, and the unchanged main suite remains 11/50. Fact and citation coverage improve modestly, citation precision slips to 79.83%, and the absolute quality gate still fails. Includes independent review fixes, frozen Oracle checks, failed development iterations and reproduction instructions.

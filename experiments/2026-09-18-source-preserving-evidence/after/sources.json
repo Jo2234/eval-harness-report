@@ -1,0 +1,178 @@
+[
+  {
+    "document_id": "nvda_2025_10k",
+    "document_type": "10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+    "period_end": "2025-01-26",
+    "sha256": "dae19486be264fd26eb00a7f920dc641041a261c81bc8c03b678eea947de4856",
+    "normalized_text_sha256": "25d4d34160db6edbf018fd54d604fe6e871f246eb372e206dee37083c1749b53",
+    "normalized_characters": 368176,
+    "verified_contexts": 4,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "nvda_2026_q1_10q",
+    "document_type": "10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm",
+    "period_end": "2025-04-27",
+    "sha256": "9f71aa343f38059e3e99cc1c37d97efee9971f4e3fd33377e363064c3a0168f4",
+    "normalized_text_sha256": "30af60003df0fbe58ee58827947787fa060611baf49b7a3d9cc4d1d034e5dd67",
+    "normalized_characters": 146294,
+    "verified_contexts": 4,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "aapl_2025_10k",
+    "document_type": "10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "period_end": "2025-09-27",
+    "sha256": "548ae59778cf08ee0f2ee088e7ece20d947076c3c01f74d2d65db4c2777e436a",
+    "normalized_text_sha256": "09e1828b116b3a4af7d2d9781de3c5d775177fb7e68b2f25f7a9ee6ee106c48e",
+    "normalized_characters": 220566,
+    "verified_contexts": 3,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "aapl_2026_q1_10q",
+    "document_type": "10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm",
+    "period_end": "2025-12-27",
+    "sha256": "3a3d9336a924488440e83b811ba354f654738cc822b6eb69ed6063e8cf348542",
+    "normalized_text_sha256": "25840adb0ee5cce9e0a5a40da0a9cd4f3d1faade7b231a5b6d71bbfa157c6820",
+    "normalized_characters": 66117,
+    "verified_contexts": 3,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "msft_2025_10k",
+    "document_type": "10-K",
+    "url": "https://www.microsoft.com/investor/reports/ar25/",
+    "period_end": "2025-06-30",
+    "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+    "normalized_text_sha256": "a9c0c5f31a0da6cff306d2358e759b364c5c144545236f7ad3489bfd7d80b815",
+    "normalized_characters": 226725,
+    "verified_contexts": 2,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "msft_2026_q1_10q",
+    "document_type": "10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/msft-20250930.htm",
+    "period_end": "2025-09-30",
+    "sha256": "c963d7503907384926e685a27064574fb9fbfa1adf9e2ececca4b2c3b7a35e12",
+    "normalized_text_sha256": "b57ae9642795fc187373f0de61834d23a0f3abff2f4ea6a4c01370b21ce56556",
+    "normalized_characters": 210013,
+    "verified_contexts": 4,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "jpm_2025_10k",
+    "document_type": "10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
+    "period_end": "2025-12-31",
+    "sha256": "4d9febdbc2038dcdca8726053286df4cbbfd48885051cbd781efcc3becb66a23",
+    "normalized_text_sha256": "dc7a0dfc99bd1a5a9bfd5ce33e03bdb1a58a1ce0ef560d4d88288420192ca5e6",
+    "normalized_characters": 1410406,
+    "verified_contexts": 3,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "jpm_2026_q1_10q",
+    "document_type": "10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026029344/jpm-20260331.htm",
+    "period_end": "2026-03-31",
+    "sha256": "08e5a5c3e5a3685b1a5c783eeb9f11808dea535f7a2fb1e139c6b9319d35afe9",
+    "normalized_text_sha256": "dcf8c4bff29a4e73510eec479e3bb5e877aa424cf3163afe04f02e94920bc8e9",
+    "normalized_characters": 733113,
+    "verified_contexts": 3,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "xom_2025_10k",
+    "document_type": "10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/xom-20251231.htm",
+    "period_end": "2025-12-31",
+    "sha256": "3591db2246ab14c52465d32f69b459b000919c141a5656c81cf59acf0a805be8",
+    "normalized_text_sha256": "d06477ea95da18fccd40aff4597f028df66fa708c814ea3589cc7ac33ec3e273",
+    "normalized_characters": 476589,
+    "verified_contexts": 3,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "xom_2026_q1_10q",
+    "document_type": "10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408826000067/xom-20260331.htm",
+    "period_end": "2026-03-31",
+    "sha256": "09f0d43968999f2ca0f14224e5acf2cf1c477a97c5bedef03edc55f072d5dff9",
+    "normalized_text_sha256": "a69e5c7c348a80bef661d5f0029cf8fc4beef2e32a5c60a286fd6c7592d0cca5",
+    "normalized_characters": 90431,
+    "verified_contexts": 1,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "tsla_2025_10k",
+    "document_type": "10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+    "period_end": "2025-12-31",
+    "sha256": "90d5d2bc4057df41c645f85dcebe575af9b0953a6a1902d189297bec17fd440a",
+    "normalized_text_sha256": "cd58b73a5db869e2bed06a27e329e50d1edab47c1ad20b1eeca9784514776073",
+    "normalized_characters": 429673,
+    "verified_contexts": 5,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "tsla_2026_q1_10q",
+    "document_type": "10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+    "period_end": "2026-03-31",
+    "sha256": "0828884cae209013b718cc61762d476aa5fa121db235735cd56eb66f35b0c788",
+    "normalized_text_sha256": "a0a42946f522af489844f0b7045e0d084ea20a2452af19f74a13a86bdd984d96",
+    "normalized_characters": 146248,
+    "verified_contexts": 1,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "nvda_2026_q1_earnings_call",
+    "document_type": "earnings_call",
+    "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/q1/NVDA-Q1-2026-Earnings-Call-28-May-2025-5_00-PM-ET.pdf",
+    "period_end": "2025-04-27",
+    "sha256": "22cb530f2e7b3ee72c4fa6bd369ffc6dc687b263eef121b4305d5762a48c0c21",
+    "normalized_text_sha256": "ca157783c76bcf358704b6bf7d583bbee57a10f1a2a6a1ca09de04e9219c989e",
+    "normalized_characters": 60627,
+    "verified_contexts": 1,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "msft_2026_q1_earnings_call",
+    "document_type": "earnings_call",
+    "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+    "period_end": "2025-09-30",
+    "sha256": "4f3d9cbc53e31388f2074c3e491eaf37b8012efa169213722622d3b35cf743c7",
+    "normalized_text_sha256": "6994888b1454610d60b301f545d3284f5785b7dd67a24ea9d2a80a45270e5ff2",
+    "normalized_characters": 55465,
+    "verified_contexts": 1,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "jpm_2026_q1_earnings_call",
+    "document_type": "earnings_call",
+    "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/1st-quarter/1q26-earnings-transcript.pdf",
+    "period_end": "2026-03-31",
+    "sha256": "0b97af7b67e8c14fd812a7e6ece55ea74005d3968b942560db2e558ea96f63f9",
+    "normalized_text_sha256": "b13153beb0a92f8015342a1aae198decac0e89f56025f04e23985ef86d445491",
+    "normalized_characters": 101460,
+    "verified_contexts": 1,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  },
+  {
+    "document_id": "aapl_2026_q1_earnings_release",
+    "document_type": "earnings_release",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+    "period_end": "2025-12-27",
+    "sha256": "28d8600ea68c13702a58336336c035843df7989d96b4edb90468fb56b1a1b6b0",
+    "normalized_text_sha256": "56d87507189b47d8c21efecfc83cf52a8aa68b81e8f21f1cf99cd07f5d03e764",
+    "normalized_characters": 9895,
+    "verified_contexts": 1,
+    "origin": "previously fetched primary-source snapshot; independently hash-verified for this run"
+  }
+]

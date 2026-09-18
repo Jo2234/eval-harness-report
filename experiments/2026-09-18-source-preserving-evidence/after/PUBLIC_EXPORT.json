@@ -1,0 +1,14 @@
+{
+  "policy": "Original full captures retained locally. All extractive answers, key points and source-excerpt fields omitted from public target payloads, including filings and transcripts.",
+  "original_capture_file_sha256": "673a775f555aae687f1b8baf86e586d466c62aa8cf208ca01114e2366a5d8e43",
+  "original_inventory_sha256": "3e1dd5086a7c6372d3af926c58104b375cca7ee351badcc5b1447ca95925b1a3",
+  "export_script_sha256": "60177e31357fa9cc82c7a2a2e04e7e281cf0ef5269209bd88cfcd4fd569d318e",
+  "original_hash_file": "ORIGINAL_SHA256SUMS.json",
+  "public_hash_file": "SHA256SUMS.json",
+  "scores_changed": false,
+  "rescore_limitation": "Public redacted records cannot independently rescore answer text. Original local or newly reproduced captures are required.",
+  "retained": "Questions, curator-authored case targets/rubrics, short source locators, citation IDs/metadata, measured metrics/diagnostics, execution/config/source provenance, original response/answer hashes.",
+  "additional_redactions": [
+    "ingestion.health.data_dir (local workspace path only)"
+  ]
+}

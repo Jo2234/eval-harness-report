@@ -1,0 +1,49 @@
+{
+  "head": "c8f474036879081a8cabdf4381829ab008731970",
+  "dirty_tree": false,
+  "scope": "Fresh PDF upload/chat checks after final review fixes; existing frozen scoring and inputs unchanged. No production edits by validation run.",
+  "checks": [
+    {
+      "name": "adobe",
+      "passed": 8,
+      "total": 8,
+      "capture_sha256": "3bf74bfc6a117331355492572a3ea4ff4bd94c88e5f46161458a72917561d5de",
+      "cases_sha256": "c6420c62b681f9a7ec4593c8c060665620f2d02ede65739ff5f818c4d6eeca91",
+      "runner_sha256": "13377c0a2f51da5fb3e2076fa8539d7919688d291fb93207dce9117e2a5172f5",
+      "runner_and_cases_unchanged_from_v7": true,
+      "source_metadata_unchanged_from_v7": true,
+      "sources": [
+        {
+          "id": "adobe_fy2024",
+          "sha256": "56985a60c29f24a6f5e4169fed221a5dca357b11d1e1f9ae528022f02b425661"
+        },
+        {
+          "id": "adobe_q1fy2025",
+          "sha256": "4281ca74fbb144f80307b90cbc4b4280edf9b631901b760e98080111d9f468c5"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "oracle",
+      "passed": 8,
+      "total": 8,
+      "capture_sha256": "40835f76b2b682147a7b997df12981fb0f82997caf874ecb835920940709bd6e",
+      "cases_sha256": "98035d4846c178bf37ca100f776fd934ad9758e3b8f435f9a254c6e881d733b1",
+      "runner_sha256": "376e59ca5e18e94975e1886c5d74e481055a3967ce1fcaaba1ef2453352a69a9",
+      "runner_and_cases_unchanged_from_v7": true,
+      "source_metadata_unchanged_from_v7": true,
+      "sources": [
+        {
+          "id": "oracle_fy2025",
+          "sha256": "5856c9eca4939fbce12400bdbd8da5e5d9e734467ccd7e696a61d3578049862c"
+        },
+        {
+          "id": "oracle_q1fy2027",
+          "sha256": "49cd67ba5ab0f0fd74da84d3fbe9c897d5bb8fbfcda5eb24934beeea8e203090"
+        }
+      ],
+      "failures": []
+    }
+  ]
+}

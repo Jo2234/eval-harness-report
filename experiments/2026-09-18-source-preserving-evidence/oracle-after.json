@@ -1,0 +1,357 @@
+{
+  "copilot_commit": "c8f474036879081a8cabdf4381829ab008731970",
+  "company": {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation"
+  },
+  "runner_sha256": "376e59ca5e18e94975e1886c5d74e481055a3967ce1fcaaba1ef2453352a69a9",
+  "method": "Frozen source-backed numerical fact-presence, exact source-document coverage and explicit-refusal checks; not semantic entailment or independent held-out accuracy. No reference facts or document IDs enter chat requests.",
+  "cases_sha256": "98035d4846c178bf37ca100f776fd934ad9758e3b8f435f9a254c6e881d733b1",
+  "sources": [
+    {
+      "id": "oracle_fy2025",
+      "url": "https://s23.q4cdn.com/440135859/files/doc_financials/2025/q4/4q25-pressrelease-June-final.pdf",
+      "fiscal_year": 2025,
+      "document_type": "8-k",
+      "title": "Oracle Q4 and FY2025 earnings release",
+      "sha256": "5856c9eca4939fbce12400bdbd8da5e5d9e734467ccd7e696a61d3578049862c",
+      "pages": 12
+    },
+    {
+      "id": "oracle_q1fy2027",
+      "url": "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "fiscal_year": 2027,
+      "fiscal_quarter": 1,
+      "document_type": "8-k",
+      "title": "Oracle Q1 FY2027 earnings release",
+      "sha256": "49cd67ba5ab0f0fd74da84d3fbe9c897d5bb8fbfcda5eb24934beeea8e203090",
+      "pages": 11
+    }
+  ],
+  "passed": 8,
+  "total": 8,
+  "results": [
+    {
+      "id": "q1_revenue_growth",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 151.773,
+      "citations": [
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 1-3",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "902afd13-792c-462e-ad7e-01526c8c865a",
+          "score": 0.597843,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 8-10",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "c0ff98f0-d3b4-4d7b-9598-fc4fa49ae779",
+          "score": 0.267586,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 8,
+          "page_end": 10,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 3-5",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "351355c4-2adc-438d-9c52-5832cbd5196d",
+          "score": 0.329011,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 3,
+          "page_end": 5,
+          "section_title": null
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "confidence": "medium",
+      "answer_sha256": "9c5b4a07c93d689d77c79cbe68682a818363a200a028753f53c7502ce628993a",
+      "answer_characters": 1731
+    },
+    {
+      "id": "q1_eps",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 87.604,
+      "citations": [
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 1-3",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "902afd13-792c-462e-ad7e-01526c8c865a",
+          "score": 1.03555,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 3-5",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "351355c4-2adc-438d-9c52-5832cbd5196d",
+          "score": 1.021607,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 3,
+          "page_end": 5,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 5-6",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "4922f3c0-a41c-4fad-96ca-f2b7683ac8c3",
+          "score": 0.657149,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 5,
+          "page_end": 6,
+          "section_title": null
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "confidence": "medium",
+      "answer_sha256": "38facd7e866b6e90bf8de925f96407ecf5d38059618b9d2d91195eba7d8826e5",
+      "answer_characters": 1485
+    },
+    {
+      "id": "q4_revenue_growth",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_fy2025"
+      ],
+      "expected_documents": [
+        "oracle_fy2025"
+      ],
+      "latency_ms": 86.112,
+      "citations": [
+        {
+          "label": "ORCL Oracle Q4 and FY2025 earnings release, pp. 1-3",
+          "document_id": "b4b218fd-9d11-4b48-8575-7c704c670592",
+          "chunk_id": "a9495f7c-ade2-413f-9870-24440e13d03a",
+          "score": 0.659562,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q4 and FY2025 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "confidence": "medium",
+      "answer_sha256": "11336ff78390ae210ce77da541365c4a0450f986613fad0ab39bc3d32c34e448",
+      "answer_characters": 598
+    },
+    {
+      "id": "annual_operating_cash",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_fy2025"
+      ],
+      "expected_documents": [
+        "oracle_fy2025"
+      ],
+      "latency_ms": 98.797,
+      "citations": [
+        {
+          "label": "ORCL Oracle Q4 and FY2025 earnings release, pp. 1-3",
+          "document_id": "b4b218fd-9d11-4b48-8575-7c704c670592",
+          "chunk_id": "a9495f7c-ade2-413f-9870-24440e13d03a",
+          "score": 0.740018,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q4 and FY2025 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q4 and FY2025 earnings release, pp. 8-11",
+          "document_id": "b4b218fd-9d11-4b48-8575-7c704c670592",
+          "chunk_id": "fe38cbf9-45ba-4089-a2e0-ece02d8178c9",
+          "score": 0.691508,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q4 and FY2025 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 8,
+          "page_end": 11,
+          "section_title": null
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "confidence": "medium",
+      "answer_sha256": "cfe159b0e9b3b8e0f4dbd06c0630ef9df391fbb84e3b9e17de86446f8bbd12f4",
+      "answer_characters": 1298
+    },
+    {
+      "id": "cloud_revenue_comparison",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_fy2025",
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_fy2025",
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 84.344,
+      "citations": [
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 1-3",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "902afd13-792c-462e-ad7e-01526c8c865a",
+          "score": 1.16573,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q4 and FY2025 earnings release, pp. 1-3",
+          "document_id": "b4b218fd-9d11-4b48-8575-7c704c670592",
+          "chunk_id": "a9495f7c-ade2-413f-9870-24440e13d03a",
+          "score": 1.177712,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q4 and FY2025 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "confidence": "medium",
+      "answer_sha256": "ea8562bb5e7248cec35bd53be34f4b51f75da92fdc74310a8380e002a1356d14",
+      "answer_characters": 994
+    },
+    {
+      "id": "total_revenue_comparison",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [
+        "oracle_fy2025",
+        "oracle_q1fy2027"
+      ],
+      "expected_documents": [
+        "oracle_fy2025",
+        "oracle_q1fy2027"
+      ],
+      "latency_ms": 93.64,
+      "citations": [
+        {
+          "label": "ORCL Oracle Q1 FY2027 earnings release, pp. 1-3",
+          "document_id": "745d10ff-fe2b-4d66-b7e9-532a083f66a0",
+          "chunk_id": "902afd13-792c-462e-ad7e-01526c8c865a",
+          "score": 1.169663,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q1 FY2027 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        },
+        {
+          "label": "ORCL Oracle Q4 and FY2025 earnings release, pp. 1-3",
+          "document_id": "b4b218fd-9d11-4b48-8575-7c704c670592",
+          "chunk_id": "a9495f7c-ade2-413f-9870-24440e13d03a",
+          "score": 1.177198,
+          "company_id": "cac362ad-4c55-453c-b2e0-e7c0d717ca46",
+          "title": "Oracle Q4 and FY2025 earnings release",
+          "company_ticker": "ORCL",
+          "page_start": 1,
+          "page_end": 3,
+          "section_title": null
+        }
+      ],
+      "limitations": [
+        "Answer is based only on ingested local documents; no live market data was used.",
+        "Extracted passages are supporting context, not a verified complete answer or a calculation across periods."
+      ],
+      "confidence": "medium",
+      "answer_sha256": "b0fb09381f5e9fa561793bcbc6149a4550f2fe085ed3c7e2b8377ce62c1d699c",
+      "answer_characters": 541
+    },
+    {
+      "id": "missing_period",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 23.708,
+      "citations": [],
+      "limitations": [
+        "A relevance check is not semantic entailment. Missing support is not proof that the information does not exist."
+      ],
+      "confidence": "low",
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "answer_characters": 157
+    },
+    {
+      "id": "undisclosed_target",
+      "passed": true,
+      "missing_patterns": [],
+      "documents": [],
+      "expected_documents": [],
+      "latency_ms": 69.713,
+      "citations": [],
+      "limitations": [
+        "A relevance check is not semantic entailment. Missing support is not proof that the information does not exist."
+      ],
+      "confidence": "low",
+      "answer_sha256": "182304d9205fa34723bbe55c84933e87309c0a98cb9050f572e81d218701e07c",
+      "answer_characters": 157
+    }
+  ],
+  "public_export": {
+    "redacted": true,
+    "original_capture_sha256": "40835f76b2b682147a7b997df12981fb0f82997caf874ecb835920940709bd6e",
+    "export_script_sha256": "60177e31357fa9cc82c7a2a2e04e7e281cf0ef5269209bd88cfcd4fd569d318e",
+    "method": "Applied existing export_public.redact recursively; added original answer fingerprints. Scores unchanged; no answer, key-point or source-excerpt prose retained."
+  }
+}

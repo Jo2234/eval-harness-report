@@ -1,0 +1,23 @@
+{
+  "sources.json": "13433cd0353e5a1f1efa859b3f6d935e4e3a66f7739b8e9c691463d9f1156316",
+  "config.json": "111f66c658c1acc1d666d0ade9a22666358d35362f42c77aa358c75dc2bec94e",
+  "PUBLIC_EXPORT.json": "4ff2ae99fa5336218a2ae3eb95b0621a8df3f74177f23fcedc53f99319e35820",
+  "ORIGINAL_SHA256SUMS.json": "3e1dd5086a7c6372d3af926c58104b375cca7ee351badcc5b1447ca95925b1a3",
+  "captures.jsonl": "df1592f271d1030c94c53a01e03981f7cc640a76591091e00183b86e2cba4d78",
+  "ingestion.json": "1c372da619dfdda6cb8270b13b0ef7aa30043d33bcf36065a81061dfdd00ab7d",
+  "document-map.json": "47ee1401be6c07134a65cd675b2a2dc30e3b0504e58a49c7de23f8eb38fa2e87",
+  "copilot-local/failures.csv": "d7a4e79ac9c7587a3663bf997639942532a9bee70460ab1166f2683b0c532d9b",
+  "copilot-local/summary.md": "12a9878cf2ac7e74fbb2638235b3c098886a01eb22fbeb2e7f4a770ab5dec372",
+  "copilot-local/results.json": "72dbd1520465636a89d51d147cd20c0ebf898d1435184c8ee2202de403bef58b",
+  "copilot-local/metrics.csv": "487d59ab205359bafe92e36327a60c68e14b92a539e99ef2586052efd8457be6",
+  "copilot-local/cases.jsonl": "2e13e748d18a9ffd6cd2c56520e634296dfb875a3171fe86b76ec62a7a231952",
+  "copilot-local/manifest.json": "6b3a19132414139cd36521e8a7d92cc881218993bfa236d001686e40399ec21f",
+  "copilot-local/report.html": "61dff451c235f20d5ebb3cc3f9aa38f4b4e002b75d8b4b55c8b2563449bbdcd4",
+  "lexical-baseline/failures.csv": "f771dd2e3c6baa7191be57bc929ee94ce65bf8fc436f026c1918b50e2ce44f80",
+  "lexical-baseline/summary.md": "219812b8df11dec8d7e07fc5efb28996292fef5c732331b03465268ce5be01f8",
+  "lexical-baseline/results.json": "bf39b97e937f1d096741c6a0c13b9898f53beb47f79bacb58d83e16b0d628b40",
+  "lexical-baseline/metrics.csv": "97e8a25dd92ba641e6dd9e86438c74ecfb1c19510f481eb8129ab66be286e2e4",
+  "lexical-baseline/cases.jsonl": "2aaa9575679cc8c34adbf669283d438b6e0de79a803f50634d5ba78c4de3ef34",
+  "lexical-baseline/manifest.json": "556592d9f38022152f6f2c06aae268e3a5d8ecb5d86b5a1afab79e43f24f6df6",
+  "lexical-baseline/report.html": "f80b3b04c5a28c3081d3ae9e9fb251e3fceddc2e5955250247c8c3700ac1aaef"
+}
