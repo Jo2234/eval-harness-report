@@ -1,0 +1,14 @@
+{
+  "candidate_commit": "c8f474036879081a8cabdf4381829ab008731970",
+  "published_baseline_commit": "d25da954e316736bb4615e613c13cf54c493153e",
+  "harness_commit": "4136fa1fa5375ff4f77061a1eb711250763635e3",
+  "suite_sha256": "1eaf08f68d6df324e95df38f6b6ac87850d2125c0602f61249ea467caaf9e0cb",
+  "evidence_manifest_sha256": "0ca5c91fd55c2fe1fc654c203f4f1504f7b65f150668a44614fcc5a4528ba1e1",
+  "scorer_sha256": "64abb3a8d39acf617be884b7b15023a1676470895dfe1ca7b1b26e44222266e2",
+  "harness_runner_sha256": "6c4b288d559ff48bfa36859b6cb4f97c2ce9bb5db087b2cdd7ec7cad6c831472",
+  "benchmark_runner_sha256": "a2ab152a4ac60838279e7f07082c53ff6a705eeaab13a818f53ae2a294233e8a",
+  "public_export_sha256": "60177e31357fa9cc82c7a2a2e04e7e281cf0ef5269209bd88cfcd4fd569d318e",
+  "main_capture_inventory_sha256": "3e1dd5086a7c6372d3af926c58104b375cca7ee351badcc5b1447ca95925b1a3",
+  "source_policy": "All 16 complete pinned sources and 40 evidence contexts verified by unchanged benchmark runner; inputs, scoring and thresholds unchanged.",
+  "comparison_policy": "Published11/50 baseline retained at ../2026-09-17-quality-latency/after/results.json; candidate API run is freshly captured. Timing is observational across saved runs, not an alternating comparison."
+}
